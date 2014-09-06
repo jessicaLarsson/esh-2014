@@ -1,13 +1,28 @@
 <div>
     <section>
-       	<br/>
 
-        Namn: {{selectedSchool.Skola}}
-        <br>
-        Adress: {{selectedSchool.Adress}}
-        <br>
-        Antal elever: {{selectedSchool.numOfStudents}}
-        <br>
+        <div class="school-info row">
+
+            <div class="col-md-3">
+                <h2 class="school-name">{{selectedSchool.Skola}}</h2>
+                <p class="school-address"><i class="fa fa-map-marker"></i> {{selectedSchool.Adress}}</p>
+                <a href="{{selectedSchool.Url}}" class="school-website"><i class="fa fa-globe"></i> Besök {{selectedSchool.Skola}}s hemsida</a>
+            </div>
+            <div class="col-md-3">
+                <p class="large-number">{{selectedSchool.From}} - {{selectedSchool.To}}</p>
+                <p class="number-description">Årskurs</p>
+            </div>
+            <div class="col-md-3">
+                <p class="large-number">{{selectedSchool.numOfStudents}}</p>
+                <p class="number-description">elever</p>
+            </div>
+            <div class="col-md-3">
+                <p class="large-number">{{selectedSchool.studentsPerTeacher}}</p>
+                <p class="number-description">elever / lärare</p>
+            </div>
+            
+        </div>
+       	
 
         <div class="row darker-data-row">
             <h3>Lärare</h3>
@@ -15,7 +30,7 @@
             </div>
         </div>
         <div class="row lighter-data-row">
-            <h3>Tryghet</h3>
+            <h3>Trygghet</h3>
             <div id="safety-data">
             </div>
         </div>        
