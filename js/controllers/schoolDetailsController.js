@@ -3,7 +3,6 @@ schoolApp.controller("SchoolDetailsCtrl", function ($scope, $http, $routeParams)
 	//$http.get("../../data/allschools.json") // funkar på felicia och jessicas dator
 	$http.get("data/allschools.json") // funkar på emmas dator
         .then(function(results){
-            console.log("Success!");
             //Success
             var data = results.data;
             //angular.copy(results.data, _schools); //this is the preferred; instead of $scope.movies = result.data
