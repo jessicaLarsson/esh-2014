@@ -1,5 +1,10 @@
 schoolApp.controller("SchoolDetailsCtrl", function ($scope, $http, $routeParams){
 
+	var string = $routeParams.selection;
+	$scope.selection = string.split(',');
+
+	$scope.selectedSchools = [];
+
 	//$http.get("../../data/allschools.json") // funkar på felicia och jessicas dator
 	$http.get("data/allschools.json") // funkar på emmas dator
         .then(function(results){
@@ -12,6 +17,15 @@ schoolApp.controller("SchoolDetailsCtrl", function ($scope, $http, $routeParams)
             		$scope.selectedSchool = data[a];
             	}
             }
+
+            for (var a = 0; a < $scope.selection.length; a += 1) {
+            	for (var b = 0; b < data.length; b += 1) {
+            		if (data[b].Skola == $scope.selection[a]) {
+            			$scope.selectedSchools.push(data[b]);
+            		}
+            	}
+            }
+
         }, function(results){
             //Error
         })
@@ -68,6 +82,8 @@ schoolApp.controller("SchoolDetailsCtrl", function ($scope, $http, $routeParams)
 	var data_id = (schoolID+1)*(questionNumber+1)*(year2009+1)-1;
 
 	//document.write(new_data[data_id]);
+
+
 
 	$scope.questions = questionArray;
     
