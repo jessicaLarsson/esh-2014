@@ -1,5 +1,9 @@
+<div class = "container">
 <div ng-repeat="school in schools | filter: searchSchool">
+<span ng-class-odd="'odd'" ng-class-even="'even'">
   <div class = "row schoolListElement">
+
+  
     <div class="col-sm-3"> <!-- skolnamn -->
     
         <b><a href="#/{{school.Skola}}">{{school.Skola}}</a></b></br>
@@ -27,8 +31,9 @@
 
     
 </div> <!-- row -->
+</span>
 </div> <!-- ng-repeat -->
-
+</div>
 
 
 
