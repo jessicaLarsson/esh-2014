@@ -10,7 +10,7 @@ schoolApp.config(function($routeProvider){
             templateUrl: "js/views/schoolsListView.html"
         })
         .when("/:schoolName",{
-        	controller:"SchoolsCtrl",
+        	controller:"SchoolDetailsCtrl",
         	templateUrl: "js/views/singleSchoolView.html"
         });
  
