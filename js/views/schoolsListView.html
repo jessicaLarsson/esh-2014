@@ -12,22 +12,23 @@
       
         {{school.From}} - {{school.To}} 
   
-    </div><!-- ./col-sm-3 -->
+    </div><!-- ./col-sm-3 årskurs -->
 
-    <div class="col-sm-3"> <!-- avstånd-->
-        <script>
-            var dist = mapFunction.getDistance(58.41075642311165, 15.621438785552755);
-        </script>
+    <div class="col-sm-3" data-ng-init="getDistance(school.Lat, school.Lon, school.Skola)"> <!-- avstånd-->
         
-    </div><!-- ./col-sm-3 -->
+      {{distances[$index]}}
+  
+    </div><!-- ./col-sm-3 avstånd -->
 
-    <div class="col-sm-3">
+    <div class="col-sm-3" data-ng-init="getTravelTime(school.Lat)">  <!-- restid -->
+ {{travelTimeM}}
+
     </div><!-- ./col-sm-3 -->
 
     
-
 </div> <!-- row -->
 </div> <!-- ng-repeat -->
+
 
 
 

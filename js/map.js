@@ -52,7 +52,7 @@ function mapFile(){
         icon: 'img/home-blue.png'
     });
 
-    addSchoolMarker(58.41075642311165, 15.621438785552755);
+    //addSchoolMarker(58.41075642311165, 15.621438785552755);
     hideSchoolMarker(58.41075642311165, 15.621438785552755);
     showSchoolMarker(58.41075642311165, 15.621438785552755);
 
@@ -107,15 +107,16 @@ function mapFile(){
   }
 
   /* Adds a marker to the map and to the marker array at the given lat lon position */
-  function addSchoolMarker(lat, lon){
+  this.addSchoolMarker = function(lat, lon, name){
     pos = new google.maps.LatLng(lat, lon); 
     var marker = new google.maps.Marker({
         map: map,
-        draggable:true,
+        draggable:false,
         position: pos
     });
     markerArray.push(marker);
-    distanceArray.push(calculateDistance(markerArray[0].getPosition(), myLatlng));
+    distanceArray.push(calculateDistance(markerArray[markerArray.length-1].getPosition(), myLatlng));
+    return distanceArray[distanceArray.length-1];
   }
 
   /* Hides the marker at the given lat lon position in the map */
@@ -161,9 +162,13 @@ function calculateDistance(p1, p2) {
   }
 
 this.getDistance = function(lat, lon) {
-  console.log(lat + " " + lon);
+
+  console.log("i getDistance" + markerArray.length);
   for(i = 0; i < markerArray.length; i++){
-    if(markerArray[i].getPosition().lat() == lat && markerArray[i].getPosition().lng() == lon){
+    //console.log(markerArray[i].getPosition().lat() + " - " + lat );
+    //console.log(markerArray[i].getPosition().lng() + " - " + lon);
+    if(markerArray[i].getPosition().lat().substring(0,8) == lat && markerArray[i].getPosition().lng().substring(0,8) == lon){
+      //console.log("returnera: " + distanceArray[i]);
       return distanceArray[i];
     }
   }

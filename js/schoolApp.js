@@ -1,9 +1,10 @@
 var schoolApp = angular.module("schoolApp", []);
 var mapFunction = new mapFile();
+//var travelPlanner = new resRobot();
 //...configuring and routing
 
 schoolApp.config(function($routeProvider){
-    console.log($routeProvider);
+    
     $routeProvider
         .when("/",{
             controller: "SchoolsCtrl",
