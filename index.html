@@ -8,6 +8,7 @@
     <link href="css/basic.css" rel="stylesheet">
     <link href="css/home-view.css" rel="stylesheet">
     <link href="css/schoolListView.css" rel="stylesheet">
+    <link href="css/singleSchoolView.css" rel="stylesheet">
     
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -122,11 +123,8 @@
     </section><!-- ./order-section -->
 
     <!-- DATA-SECTION -->
-    <section class="data-section">
-      <div class="container">
-        <div ng-view="schoolListView"></div>     
-      </div><!-- ./container -->
-    </section><!-- ./data-section -->
+
+    <div ng-view="schoolListView"></div>     
 
     <!-- FOOTER-SECTION -->
     <section class="footer-section">
@@ -139,7 +137,7 @@
         </div><!-- ./container -->
     </section><!-- ./footer-section -->
 
-
+    <script src="http://d3js.org/d3.v3.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyfGb7S9OQLg-vjvJg6e9g-z7gNVXgeGQ"></script>
     <script type="text/javascript" src="js/map.js"></script>   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
