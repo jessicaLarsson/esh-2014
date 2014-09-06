@@ -1,7 +1,9 @@
-
+<div class = "row schoolListElement">
     <div ng-repeat="school in schools">
-        <a href="#/{{school.Skola}}">{{school.Skola}}</a>
-        <hr>
+        <b><a href="#/{{school.Skola}}">{{school.Skola}}</a></b></br>
+        {{school.Adress}}
+
+    </div> <!-- ng-repeat -->
 
     </div>
 
