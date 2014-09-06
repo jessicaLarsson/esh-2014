@@ -1,5 +1,5 @@
 var schoolApp = angular.module("schoolApp", []);
-
+var mapFunction = new mapFile();
 //...configuring and routing
 
 schoolApp.config(function($routeProvider){

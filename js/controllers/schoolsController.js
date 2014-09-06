@@ -3,5 +3,4 @@ schoolApp.controller("SchoolsCtrl", function ($scope, schoolsService){
     $scope.schools = schoolsService.schools;
 
     schoolsService.getSchools();
-    
 });
