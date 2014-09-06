@@ -1,5 +1,5 @@
 <div class = "row schoolListElement">
-    <div ng-repeat="school in schools">
+    <div ng-repeat="school in schools | filter: searchSchool">
         <b><a href="#/{{school.Skola}}">{{school.Skola}}</a></b></br>
         {{school.Adress}}
 
