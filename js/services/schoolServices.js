@@ -2,7 +2,8 @@ schoolApp.factory("schoolsService", function($http){
     var _schools = [];
 
     var _getSchools = function(){
-        $http.get("../../data/allschools.json")
+        //$http.get("../../data/allschools.json") // funkar på felicia och jessicas dator
+        $http.get("data/allschools.json") // funkar på emmas dator
             .then(function(results){
                 console.log("Success!");
                 //Success
@@ -11,7 +12,6 @@ schoolApp.factory("schoolsService", function($http){
                 //Error
             })
     }
-
 
     return{
         schools: _schools,
