@@ -2,7 +2,8 @@ var map; //the map
 var homeMarker; //marker in the users location
 var myLatlng; //user home location
 var centerLatlng; //location of Linkoping centrum
-
+var markerArray = [];
+var distanceArray = [];
 
 function initialize() { 
   centerLatlng = new google.maps.LatLng(58.41075642311165, 15.621438785552755); //linkoping centrum
@@ -49,6 +50,10 @@ function initialize() {
       icon: 'img/home-blue.png'
   });
 
+  addSchoolMarker(58.41075642311165, 15.621438785552755);
+  hideSchoolMarker(58.41075642311165, 15.621438785552755);
+  showSchoolMarker(58.41075642311165, 15.621438785552755);
+
   /* Use the users current location */
   if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -80,7 +85,7 @@ function initialize() {
   });
 
   /* After moving the marker (on mouseup), run updatePos function */
-  google.maps.event.addListener(homeMarker, 'mouseup', updatePos);
+  google.maps.event.addListener(homeMarker, 'mouseup', updateUserPos);
 }
 
 /* If geolocation fails - print console message */
@@ -93,8 +98,64 @@ function handleNoGeolocation(errorFlag) {
 }
 
 /* When moving the user location marker (homeMarker) the location variable is updated */
-function updatePos() {
+function updateUserPos() {
   myLatlng = new google.maps.LatLng(homeMarker.getPosition().lat(), homeMarker.getPosition().lng());
+  updateDistances();
+  alert(distanceArray[0]);
+}
+
+/* Adds a marker to the map and to the marker array at the given lat lon position */
+function addSchoolMarker(lat, lon){
+  pos = new google.maps.LatLng(lat, lon); 
+  var marker = new google.maps.Marker({
+      map: map,
+      draggable:true,
+      position: pos
+  });
+  markerArray.push(marker);
+  distanceArray.push(getDistance(markerArray[0].getPosition(), myLatlng));
+}
+
+/* Hides the marker at the given lat lon position in the map */
+function hideSchoolMarker(lat, lon){
+  for(i = 0; i < markerArray.length; i++){
+    if(markerArray[i].getPosition().lat() == lat && markerArray[i].getPosition().lng() == lon){
+      markerArray[i].setVisible(false);
+      break;
+    }
+  }
+}
+
+/* Shows the marker at the given lat lon position in the map */
+function showSchoolMarker(lat, lon){
+  for(i = 0; i < markerArray.length; i++){
+    if(markerArray[i].getPosition().lat() == lat && markerArray[i].getPosition().lng() == lon){
+      markerArray[i].setVisible(true);
+      break;
+    }
+  }
+}
+
+function getDistance(p1, p2) {
+  var R = 6378137; // Earth’s mean radius in meter
+  var dLat = rad(p2.lat() - p1.lat());
+  var dLong = rad(p2.lng() - p1.lng());
+  var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(rad(p1.lat())) * Math.cos(rad(p2.lat())) *
+    Math.sin(dLong / 2) * Math.sin(dLong / 2);
+  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  var d = R * c;
+  return d; // returns the distance in meter
+};
+
+function rad(x) {
+  return x * Math.PI / 180;
+};
+
+function updateDistances(){
+  for(i = 0; i < markerArray.length; i++){
+    distanceArray[i] = getDistance(markerArray[0].getPosition(), myLatlng);
+  }
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
