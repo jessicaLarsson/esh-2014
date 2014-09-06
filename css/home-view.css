@@ -1,0 +1,46 @@
+/*This file contains css specific for the  */
+
+.map-section {
+	background: #FFFFFF;
+}
+
+#map-canvas { 
+	height: 500px; 
+}
+
+.filter-sidebar{
+	padding: 30px 30px 30px 50px;
+}
+
+form.filter-form .form-group .my-text-input{
+	padding: 20px !important;
+	margin: 0 0 20px 0;
+	border: 3px solid;
+	border-color: #4cd9c0;
+	border-radius: 0;
+}
+
+.order-section {
+	background-color: #ff8989;
+	color: #ffffff;
+	font-size: 18px;
+	padding: 15px 0 15px 0;
+}
+
+.order-section a{
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 5px 15px 5px 15px;
+	background: #ff8989;
+}
+
+.order-section a:hover{
+	text-decoration: none;
+	background: #ff8989;
+}
+
+.data-section {
+	background: #eee;
+	text-align: center;
+	padding: 50px;
+}
