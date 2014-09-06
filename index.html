@@ -16,6 +16,118 @@
 
   <body>
 
+    <!-- NAVBAR -->
+    <div class="navbar navbar-default blue-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo" href="#">SkolJakten</a> <!-- SkolKompassen?? -->
+        </div><!-- ./navbar-header -->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Hem</a></li>
+            <li><a href="#about">Om</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div><!-- ./navbar-collapse-collapse -->
+      </div><!-- ./container -->
+    </div><!-- ./navbar navbar-default blue-navbar -->
+
+    <!-- MAP-SECTION --> 
+    <section class="map-section">
+      <div class="row">
+        <div class="col-md-3 filter-sidebar">
+          <form role="form" class="filter-form">
+            <div class="form-group">
+              <label for="input1" class="sr-only">Password</label>
+              <input type="text" class="form-control my-text-input" id="input1" placeholder="Input...">
+            </div>
+            <div class="form-group">
+              <label for="input2" class="sr-only">Password</label>
+              <input type="text" class="form-control my-text-input" id="input2" placeholder="More input...">
+            </div>
+            <div class="form-group">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="0"> F
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="1"> 1
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox2" value="2"> 2
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox3" value="3"> 3
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="4"> 4
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox2" value="5"> 5
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox3" value="6"> 6
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="7"> 7
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox2" value="8"> 8
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox3" value="9"> 9
+              </label>
+            </div><!-- ./form-group -->
+          </form><!-- ./filter-form -->       
+        </div><!-- ./col-md-3 -->
+        <div class="col-md-9">
+          <div id="map-canvas"/>
+        </div><!-- ./col-md-9 -->
+      </div><!-- ./row-->
+    </section><!-- ./map-section -->
+
+    <!--ORDER-SECTION -->
+    <section class="order-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                  <a href="#">Namn <i class="fa fa-sort"></i></a>
+                </div><!-- ./col-sm-3 -->
+                <div class="col-sm-3">
+                  <a href="#">Avstånd <i class="fa fa-sort"></i></a>
+                </div><!-- ./col-sm-3 -->
+                <div class="col-sm-3">
+                  <a href="#">Restid <i class="fa fa-sort"></i></a>
+                </div><!-- ./col-sm-3 -->
+                <div class="col-sm-3">
+                  <a href="#">?? <i class="fa fa-sort"></i></a>
+                </div><!-- ./col-sm-3 -->
+            </div><!-- ./row-->
+        </div><!-- ./container -->
+    </section><!-- ./order-section -->
+
+    <!-- DATA-SECTION -->
+    <section class="data-section">
+      <div class="container">
+        <div ng-view="schoolListView"></div>     
+      </div><!-- ./container -->
+    </section><!-- ./data-section -->
+
+    <!-- FOOTER-SECTION -->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>This is a footer with contact info</h1>
+                </div><!-- ./col-lg-12 -->
+            </div><!-- ./row -->
+        </div><!-- ./container -->
+    </section><!-- ./footer-section -->
 
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyfGb7S9OQLg-vjvJg6e9g-z7gNVXgeGQ"></script>
