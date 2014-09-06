@@ -48,7 +48,7 @@
 
               <label class="checkbox-inline">
               <p>Skolform:</p>
-              <input type="checkbox" value="0"> friskola </br>
+              <input type="checkbox" ng-model="filter['0']" value="0"> friskola </br>
                 <input type="checkbox" id="inlineCheckbox1" value="1"> kommunal</br>
                 <input type="checkbox" id="inlineCheckbox2" value="2"> enskild kommunal</br>
              </label>
@@ -108,14 +108,15 @@
                   <a href="#">Namn <i class="fa fa-sort"></i></a>
                 </div><!-- ./col-sm-3 -->
                 <div class="col-sm-3">
+                  <a href="#">Årskurs<i class="fa fa-sort"></i></a>
+                </div><!-- ./col-sm-3 -->
+                <div class="col-sm-3">
                   <a href="#">Avstånd <i class="fa fa-sort"></i></a>
                 </div><!-- ./col-sm-3 -->
                 <div class="col-sm-3">
                   <a href="#">Restid <i class="fa fa-sort"></i></a>
                 </div><!-- ./col-sm-3 -->
-                <div class="col-sm-3">
-                  <a href="#">?? <i class="fa fa-sort"></i></a>
-                </div><!-- ./col-sm-3 -->
+                
             </div><!-- ./row-->
         </div><!-- ./container -->
     </section><!-- ./order-section -->
