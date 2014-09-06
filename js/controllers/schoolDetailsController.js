@@ -1,12 +1,17 @@
 schoolApp.controller("SchoolDetailsCtrl", function ($scope, $http, $routeParams){
 
-	//$http.get("../../data/allschools.json") // funkar på felicia och jessicas dator
-	$http.get("data/allschools.json") // funkar på emmas dator
+
+	var lowest = 0;
+	$scope.highest;
+	var altNames = "";
+
+	$http.get("../../data/allschools.json") // funkar på felicia och jessicas dator
+	//$http.get("data/allschools.json") // funkar på emmas dator
         .then(function(results){
             console.log("Success!");
             //Success
             var data = results.data;
-            //angular.copy(results.data, _schools); //this is the preferred; instead of $scope.movies = result.data
+            var data_id = 0;
             for (var a = 0; a < data.length; a += 1) {
             	if (data[a].Skola == $routeParams.schoolName) {
             		$scope.selectedSchool = data[a];
@@ -15,6 +20,8 @@ schoolApp.controller("SchoolDetailsCtrl", function ($scope, $http, $routeParams)
         }, function(results){
             //Error
         })
+	
+	console.log($routeParams.schoolName);
 
 	var xml03 = "data/kvalitetsarbete_skolkvalitet_grundskolan_gr311.xml";
 	var xml06 = "data/kvalitetsarbete_skolkvalitet_grundskolan_gr611.xml";
@@ -22,9 +29,7 @@ schoolApp.controller("SchoolDetailsCtrl", function ($scope, $http, $routeParams)
 
 	var questionArray = [];
 	var year2009 = 1;
-	//var schoolName = "Bankekind";
 	var schoolName =  $routeParams.schoolName;
-	console.log(schoolName);
 	var schoolID = 0;
 
 	if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -60,24 +65,21 @@ schoolApp.controller("SchoolDetailsCtrl", function ($scope, $http, $routeParams)
 	var nrOfRows = 0;
 	for(i = 0; i < questionArray.length; i++)
 	{
-		if(i % 3 == 0){
-			if(nrOfRows % 2 == 0){
-				var qRow = d3.select("#QuestionSection")
-					.append("div")
-					.attr("class", "row lighter-data-row");
-			}else{
-				var qRow = d3.select("#QuestionSection")
-					.append("div")
-					.attr("class", "row darker-data-row");
-			}
-			nrOfRows = nrOfRows + 1;
+		if(i == 7 || i ==  8 || i == 11 || i == 0){
+			var qRow = d3.select("#teacher-data");
+		}else if(i == 3 || i ==  4 || i == 5 || i == 6){
+			var qRow = d3.select("#safety-data");
+		}else if(i == 1 || i == 2 || i ==  9 || i == 10){
+			var qRow = d3.select("#study-data");
+		}else{
+			var qRow = d3.select("#food-data");
 		}
-		
 		
 		data_id = (i*schools.length*3 + year2009*schools.length + schoolID);
 		addQuestionElement(questionArray[i], new_data[data_id], qRow);
 		
 	}
+
 	
 	function addQuestionElement(question, data_value, qRow){
 		var canvasWidth = 200, //width
@@ -93,11 +95,12 @@ schoolApp.controller("SchoolDetailsCtrl", function ($scope, $http, $routeParams)
 
 	    var qSection = qRow
 	    	.append("div")
-	    	.attr("class", "col-md-4");
+	    	.attr("class", "col-md-3");
 
 	    var questionText = qSection
 	    	.append("h4")
-	    	.text(question);
+	    	.text(question)
+	    	.attr("class", "pieQuestion");
 
 	    var vis = qSection
 	      	.append("svg:svg") //create the SVG element inside the <body>

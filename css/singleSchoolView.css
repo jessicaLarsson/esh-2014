@@ -1,7 +1,13 @@
+h4.pieQuestion{
+	height: 50px;
+}
+
 .lighter-data-row {
 	background: #FFFFFF;
+	padding: 10px 50px 10px 50px;
 }
 
 .darker-data-row{
 	background: #ebebeb;
+	padding: 10px 50px 10px 50px;
 }
