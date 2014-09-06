@@ -1,10 +1,10 @@
 <div>
-   	<br>
-    <hr>
 
-    <div ng-repeat="school in schools">
+	
+   	
+  Leta efter: <input ng-model="searchSchool"><br>
+    <div ng-repeat="school in schools | filter: searchSchool">
         {{school.Skola}}
-        <hr>
     </div>
 </div>
 
