@@ -1,11 +1,31 @@
-<div class = "row schoolListElement">
-    <div ng-repeat="school in schools">
+<div ng-repeat="school in schools | filter: searchSchool">
+  <div class = "row schoolListElement">
+    <div class="col-sm-3"> <!-- skolnamn -->
+    
         <b><a href="#/{{school.Skola}}">{{school.Skola}}</a></b></br>
         {{school.Adress}}
 
-    </div> <!-- ng-repeat -->
+    
+    </div><!-- ./col-sm-3 -->
 
-    </div>
+    <div class="col-sm-3"> <!-- årskurs -->
+      
+        {{school.From}} - {{school.To}} 
+  
+    </div><!-- ./col-sm-3 -->
+
+    <div class="col-sm-3"> <!-- avstånd-->
+
+        
+    </div><!-- ./col-sm-3 -->
+
+    <div class="col-sm-3">
+    </div><!-- ./col-sm-3 -->
+
+    
+
+</div> <!-- row -->
+</div> <!-- ng-repeat -->
 
 
 
