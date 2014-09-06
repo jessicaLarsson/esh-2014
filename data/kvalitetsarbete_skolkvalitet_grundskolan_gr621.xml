@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE statinfo_xdf PUBLIC "-//COSSI//DTD STATINFO_XDF 1.0//EN" "statinfo_xdf.dtd">
+<statinfo_xdf>
+<tabletitlegrp tableIdRef="meta">
+<tabletitle><tablemaintitle>Kvalitet inom grundskolan (årskurs 6) efter kvalitetsområde, tid och område</tablemaintitle></tabletitle>
+</tabletitlegrp>
+<docmeta>
+<subjectgrp><subject>Grundskolan</subject></subjectgrp>
+<publisher>
+<organisationgrp>
+<organisation xml:lang="fi">
+<orgname>Tilastokeskus</orgname>
+<emailgrp><email>kirjaamo@stat.fi</email></emailgrp>
+<phonenumbergrp><phonenumber>+358-9-17341</phonenumber></phonenumbergrp>
+<address>00022 Tilastokeskus</address>
+<wwwaddressgrp><wwwaddress>www.tilastokeskus.fi</wwwaddress></wwwaddressgrp>
+<faxgrp><fax>+358-9-1734</fax></faxgrp>
+</organisation>
+</organisationgrp>
+</publisher>
+<date>
+<published>
+<day>2011-06-14</day>
+<time>16:22</time>
+</published>
+<modified>
+<day>2011-06-14</day>
+<time>09:00</time>
+</modified>
+</date>
+<typegrp><type>PC-AXIS</type></typegrp>
+<document_info><categories type="GR" /></document_info>
+<identifier><documentnumber>GR921</documentnumber></identifier>
+<rightsgrp><rights xml:lang="fi">Tilastokeskus</rights></rightsgrp>
+<sourcegrp><source>Källa: Linköpings kommun, enkät genomförd av Statistik &amp; Utredningar</source></sourcegrp>
+</docmeta>
+<procmeta>
+<pxmeta>
+<aggregallowed valid="no" />
+<axisversion>2000</axisversion>
+<charset>ANSI</charset>
+<contactgrp><contact>Jimmy Lindahl, 013 - 20 61 76</contact></contactgrp>
+<contentsgrp><contents>Kvalitet inom grundskolan (årskurs 6)</contents></contentsgrp>
+<decimals number="1" />
+<showdecimals number="1" />
+</pxmeta>
+</procmeta>
+<tablemeta tableId="meta">
+<notegrp forcedNote="no"><note>Enkät till elever i årskurs 6.</note></notegrp>
+<tableunitsgrp><tableunits>antal</tableunits></tableunitsgrp>
+</tablemeta>
+<statdata>
+<xdf>
+<array>
+<fieldAxis>
+<field fieldIdRef="axisvar2" />
+<field fieldIdRef="axisvar3" />
+</fieldAxis>
+<axis axisId="axisvar1">
+<name><textlang>kvalitetsområde</textlang></name>
+<value valueId="var1val1"><textlang>Sammanfattande index</textlang></value>
+<value valueId="var1val2"><textlang>Undervisning och lärande</textlang></value>
+<value valueId="var1val3"><textlang>Trygghet, normer och arbetsro</textlang></value>
+<value valueId="var1val4"><textlang>Lokaler och skolmat</textlang></value>
+<value valueId="var1val5"><textlang>Totalindex</textlang></value>
+</axis>
+<axis axisId="axisvar2">
+<name><textlang>tid</textlang></name>
+<value valueId="var2val1"><textlang>2008</textlang></value>
+<value valueId="var2val2"><textlang>2009</textlang></value>
+<value valueId="var2val3"><textlang>2010</textlang></value>
+</axis>
+<axis axisId="axisvar3">
+<name><textlang>område</textlang></name>
+<value valueId="var3val1"><textlang>Björkö</textlang></value>
+<value valueId="var3val2"><textlang>Blästadsskolan</textlang></value>
+<value valueId="var3val3"><textlang>Brunnbyskolan</textlang></value>
+<value valueId="var3val4"><textlang>Bäckskolan</textlang></value>
+<value valueId="var3val5"><textlang>Ekängsskolan</textlang></value>
+<value valueId="var3val6"><textlang>Engelska Skolan</textlang></value>
+<value valueId="var3val7"><textlang>Folkungaskolan</textlang></value>
+<value valueId="var3val8"><textlang>Fredrikgsbergsskolan</textlang></value>
+<value valueId="var3val9"><textlang>Hagbyskolan</textlang></value>
+<value valueId="var3val10"><textlang>Hjulsbroskolan</textlang></value>
+<value valueId="var3val11"><textlang>IS Atlas</textlang></value>
+<value valueId="var3val12"><textlang>Kungsbergsskolan</textlang></value>
+<value valueId="var3val13"><textlang>Kvinnebyskolan</textlang></value>
+<value valueId="var3val14"><textlang>Kärna skola</textlang></value>
+<value valueId="var3val15"><textlang>Lillgårdskolan</textlang></value>
+<value valueId="var3val16"><textlang>Linghemsskolan</textlang></value>
+<value valueId="var3val17"><textlang>Ljungs skola</textlang></value>
+<value valueId="var3val18"><textlang>Ljungsbro skola</textlang></value>
+<value valueId="var3val19"><textlang>Nya Rydsskolan</textlang></value>
+<value valueId="var3val20"><textlang>Nykils skola</textlang></value>
+<value valueId="var3val21"><textlang>Rosendalsskolan</textlang></value>
+<value valueId="var3val22"><textlang>Skeda skola</textlang></value>
+<value valueId="var3val23"><textlang>Skäggetorpsskolan</textlang></value>
+<value valueId="var3val24"><textlang>Slaka skola</textlang></value>
+<value valueId="var3val25"><textlang>Slestadskolan</textlang></value>
+<value valueId="var3val26"><textlang>Sätra skola</textlang></value>
+<value valueId="var3val27"><textlang>T1-skolorna</textlang></value>
+<value valueId="var3val28"><textlang>Tallboda skola</textlang></value>
+<value valueId="var3val29"><textlang>Tanneforsskkolan</textlang></value>
+<value valueId="var3val30"><textlang>Tokarpsskolan</textlang></value>
+<value valueId="var3val31"><textlang>Tornhagsskolan</textlang></value>
+<value valueId="var3val32"><textlang>Vidingsjöskolan</textlang></value>
+<value valueId="var3val33"><textlang>Vikingstads skola</textlang></value>
+<value valueId="var3val34"><textlang>Vist skola</textlang></value>
+<value valueId="var3val35"><textlang>Vittra i Lambohov</textlang></value>
+<value valueId="var3val36"><textlang>Vreta kloster</textlang></value>
+<value valueId="var3val37"><textlang>Ånestadsskolan</textlang></value>
+<value valueId="var3val38"><textlang>Änggårdsskolan</textlang></value>
+<value valueId="var3val39"><textlang>Samtliga skolor</textlang></value>
+</axis>
+<read>
+<for axisIdRef="axisvar1">
+<for axisIdRef="axisvar2">
+<for axisIdRef="axisvar3">
+<readCell />
+<skipChars count="1" output="" />
+</for>
+</for>
+</for>
+</read>
+<data>
+<![CDATA[
+83.7 80.7 74 90.3 77.4 83.5 84.9 82.6 85 87.2 79.7 87.4 81.6 83.2 81.8 76.5 80.7 71.7 "-" 78.9 82.7 "-" "-" "-" 83.8 "-" 82 84.9 82.4 77.6 82.4 82.3 82.8 82.9 77.7 85.7 83.1 80.2 82.2 73.2 80.4 83.9 76.8 82.9 84.1 85.6 82.2 83 87.6 84.2 87.6 88.5 82.6 86.6 81.3 83.8 81.9 75.6 77.7 87.1 "-" 87.7 87.2 80.9 81.5 83 86.5 88.1 80 82.5 83.2 84.2 87.4 89.7 86.2 84.5 80.1 83.6 84.4 76.2 85.7 87.6 89.2 84.7 86.8 83.4 82.2 85.5 85.4 86.4 82.6 78.1 80.7 81.3 81 "-" 82.3 76.4 "-" 76.3 83.8 86.2 83.4 "-" 79.5 81.3 87.9 78.1 80.2 87.5 73.4 86.2 91.5 87 70.5 83.2 82.9 
+78.4 76.3 70.8 88.4 79.8 79.1 83.4 80.6 80.2 86.2 75.9 88.3 83.8 80 82.6 69.6 74.3 70.6 "-" 78.3 79.7 "-" "-" "-" 81.4 "-" 78.4 86.9 81.6 75 81.6 83 82.9 81.2 78.7 88.1 81.4 80.5 79.9 71.8 77.5 81.2 75.7 82.3 77.2 82 79.6 82.2 87.7 82.1 84.3 89.2 78.8 86.6 76.6 79 82.5 74.7 67.1 90.1 "-" 89.6 85.1 80.9 75.6 81.8 85.6 89.3 78.2 79.9 80.9 84.4 83.6 90.7 82.4 84 80.5 81.5 76.5 74.8 86 88 89.3 78.3 84 81.1 76.9 82.3 83.3 81.7 81.6 75.3 78.5 75.9 79.3 "-" 83.2 69.6 "-" 70.7 86 84.1 81.6 "-" 79.3 80.4 86.3 78.8 78.9 86.5 69.3 83.7 89.2 88.8 68.2 82.2 80.6 
+87.4 83.7 76.4 91.6 75.7 86.7 85.9 84.1 88.3 87.9 82.4 86.8 80 85.5 81.2 81.4 85.2 72.4 "-" 79.4 84.8 "-" "-" "-" 85.5 "-" 84.6 83.4 83 79.5 83 81.8 82.7 84.1 76.9 84.1 84.4 79.9 83.8 74.1 82.4 85.7 77.6 83.3 88.9 88.2 84 83.5 87.6 85.7 89.9 88.1 85.3 86.5 84.7 87.2 81.5 76.2 85.2 84.9 "-" 86.3 88.8 80.9 85.7 83.8 87.2 87.3 81.3 84.3 84.8 84.1 90.2 89 88.9 84.9 79.8 85 90.1 77.3 85.5 87.3 89.2 89.2 88.8 85.1 86.1 87.8 86.9 89.9 83.2 80.2 82.2 85.2 82.2 "-" 81.7 81.3 "-" 80.3 82.2 87.7 84.7 "-" 79.6 81.9 89 77.6 81.1 88.2 76.3 88 93.2 85.7 72.2 83.9 84.5 
+90.2 70.8 75.9 79 77.5 76.4 84.7 91 78.2 91.6 65.3 81.9 82.4 82.2 72.9 65.9 92.6 62.9 "-" 80 77.6 "-" "-" "-" 78.5 "-" 85.2 74.5 83.7 75.3 77 73.9 76.4 72.4 86.9 73.3 78.3 79.9 77.3 81.8 65.5 79.2 79.7 72.3 79.7 75.7 71.9 69.9 79.2 64.9 75.4 74.7 76.5 71.3 66.3 76.1 67.1 66.5 70.8 75.7 "-" 82.1 73.1 70.1 79.2 79 68.1 78.9 68.5 70.9 71.8 66.7 82 91.7 68.5 73.2 75.7 73.8 90 59.3 76.3 87.7 80.2 80.5 72.3 72.4 76.6 79.5 59.9 80.1 68.7 69.7 87.7 69.2 84.5 "-" 68 65.6 "-" 50.7 75.6 80.6 77.9 "-" 71.8 60.7 68.4 65 71.3 64.6 51 68.6 83.3 72.9 59.7 82.3 72.6 
+85 78.7 74.4 88 77.4 82.1 84.9 84.3 83.6 88.1 76.8 86.3 81.8 83 80 74.4 83 69.9 "-" 79.1 81.6 "-" "-" "-" 82.7 "-" 82.6 82.8 82.7 77.2 81.3 80.6 81.5 80.8 79.5 83.3 82.2 80.1 81.2 75.3 76.6 82.7 77.5 80.2 83 83.2 79.6 79.7 85.5 79.4 84.6 85.1 81.1 82.7 77.6 81.9 78.2 73.3 76 84.3 "-" 86.3 83.7 78.2 80.9 82 81.9 85.8 77.1 79.6 80.3 79.8 86.1 90.2 81.8 81.7 79 81.1 85.8 72 83.3 87.6 87 83.6 83.2 80.7 80.8 84 79 84.9 79.1 76 82.4 78.3 81.9 "-" 78.7 73.7 "-" 69.9 81.8 84.8 82 "-" 77.6 76.1 83 74.8 78 81.8 67.8 81.8 89.5 83.5 67.8 83 80.3 
+]]>
+</data>
+</array>
+</xdf>
+</statdata>
+</statinfo_xdf>

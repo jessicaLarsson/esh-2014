@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE statinfo_xdf PUBLIC "-//COSSI//DTD STATINFO_XDF 1.0//EN" "statinfo_xdf.dtd">
+<statinfo_xdf>
+<tabletitlegrp tableIdRef="meta">
+<tabletitle><tablemaintitle>Kvalitet inom grundskolan (årskurs 9) efter kvalitetsområde, tid och område</tablemaintitle></tabletitle>
+</tabletitlegrp>
+<docmeta>
+<subjectgrp><subject>Grundskolan</subject></subjectgrp>
+<publisher>
+<organisationgrp>
+<organisation xml:lang="fi">
+<orgname>Tilastokeskus</orgname>
+<emailgrp><email>kirjaamo@stat.fi</email></emailgrp>
+<phonenumbergrp><phonenumber>+358-9-17341</phonenumber></phonenumbergrp>
+<address>00022 Tilastokeskus</address>
+<wwwaddressgrp><wwwaddress>www.tilastokeskus.fi</wwwaddress></wwwaddressgrp>
+<faxgrp><fax>+358-9-1734</fax></faxgrp>
+</organisation>
+</organisationgrp>
+</publisher>
+<date>
+<published>
+<day>2011-06-14</day>
+<time>16:22</time>
+</published>
+<modified>
+<day>2011-06-14</day>
+<time>09:00</time>
+</modified>
+</date>
+<typegrp><type>PC-AXIS</type></typegrp>
+<document_info><categories type="GR" /></document_info>
+<identifier><documentnumber>GR921</documentnumber></identifier>
+<rightsgrp><rights xml:lang="fi">Tilastokeskus</rights></rightsgrp>
+<sourcegrp><source>Källa: Linköpings kommun, enkät genomförd av Statistik &amp; Utredningar</source></sourcegrp>
+</docmeta>
+<procmeta>
+<pxmeta>
+<aggregallowed valid="no" />
+<axisversion>2000</axisversion>
+<charset>ANSI</charset>
+<contactgrp><contact>Jimmy Lindahl, 013 - 20 61 76</contact></contactgrp>
+<contentsgrp><contents>Kvalitet inom grundskolan (årskurs 9)</contents></contentsgrp>
+<decimals number="1" />
+<showdecimals number="1" />
+</pxmeta>
+</procmeta>
+<tablemeta tableId="meta">
+<notegrp forcedNote="no"><note>Enkät till elever i årskurs 9.</note></notegrp>
+<tableunitsgrp><tableunits>antal</tableunits></tableunitsgrp>
+</tablemeta>
+<statdata>
+<xdf>
+<array>
+<fieldAxis>
+<field fieldIdRef="axisvar2" />
+<field fieldIdRef="axisvar3" />
+</fieldAxis>
+<axis axisId="axisvar1">
+<name><textlang>kvalitetsområde</textlang></name>
+<value valueId="var1val1"><textlang>Sammanfattande index</textlang></value>
+<value valueId="var1val2"><textlang>Undervisning och lärande</textlang></value>
+<value valueId="var1val3"><textlang>Trygghet, normer och arbetsro</textlang></value>
+<value valueId="var1val4"><textlang>Lokaler och skolmat</textlang></value>
+<value valueId="var1val5"><textlang>Totalindex</textlang></value>
+</axis>
+<axis axisId="axisvar2">
+<name><textlang>tid</textlang></name>
+<value valueId="var2val1"><textlang>2008</textlang></value>
+<value valueId="var2val2"><textlang>2009</textlang></value>
+<value valueId="var2val3"><textlang>2010</textlang></value>
+</axis>
+<axis axisId="axisvar3">
+<name><textlang>område</textlang></name>
+<value valueId="var3val1"><textlang>Berzeliusskolan</textlang></value>
+<value valueId="var3val2"><textlang>Björkö friskola</textlang></value>
+<value valueId="var3val3"><textlang>Ekholmsskolan</textlang></value>
+<value valueId="var3val4"><textlang>Engelska skolan</textlang></value>
+<value valueId="var3val5"><textlang>Folkungaskolan</textlang></value>
+<value valueId="var3val6"><textlang>Internationella skolan Atlas</textlang></value>
+<value valueId="var3val7"><textlang>Kungsbergsskolan</textlang></value>
+<value valueId="var3val8"><textlang>Kärna skola</textlang></value>
+<value valueId="var3val9"><textlang>Linghemsskola</textlang></value>
+<value valueId="var3val10"><textlang>Ljungsbro skola</textlang></value>
+<value valueId="var3val11"><textlang>Nya Munken</textlang></value>
+<value valueId="var3val12"><textlang>Nya Rydsskolan</textlang></value>
+<value valueId="var3val13"><textlang>Skäggetorpsskolan</textlang></value>
+<value valueId="var3val14"><textlang>Tokarpsskolan</textlang></value>
+<value valueId="var3val15"><textlang>Tornhagsskolan</textlang></value>
+<value valueId="var3val16"><textlang>Vittra i Lambohov</textlang></value>
+<value valueId="var3val17"><textlang>Ånestadsskolan</textlang></value>
+<value valueId="var3val18"><textlang>Samtliga skolor</textlang></value>
+</axis>
+<read>
+<for axisIdRef="axisvar1">
+<for axisIdRef="axisvar2">
+<for axisIdRef="axisvar3">
+<readCell />
+<skipChars count="1" output="" />
+</for>
+</for>
+</for>
+</read>
+<data>
+<![CDATA[
+76.6 74.9 75.3 75.4 74.4 70 74.5 69.4 73.5 74.1 76.9 75.2 79.1 71.6 79.3 "-" 74.9 75.3 78.5 75.9 72.6 73.8 74.9 77.4 75.2 73 75.9 65.5 81.8 76.1 77.4 78.3 81.6 86.4 73.4 75.9 82 76.5 74.5 69.4 82 74 73.7 71.9 76.1 70.3 81.1 78.4 82.1 74.8 78.3 89.4 76.5 76.8 
+72.7 67.2 70.1 67.5 68.6 65.2 71 64.8 66.3 68.1 70.7 70.6 79.5 65.9 73.8 "-" 70 70.3 72.9 70 66.3 69.8 68.8 71.4 69.9 66.6 69.6 59.1 77.8 72.5 75.2 75.6 77.3 84.6 68.5 70.9 79.4 72.6 68.2 62.1 77.8 66 68.6 65.3 69.4 64.3 77.2 73.9 78.8 68.2 73.4 88.9 69.7 71.6 
+79.4 80.4 79 80.9 78.5 73.5 77 72.7 78.5 78.3 81.3 78.4 78.9 75.7 83.3 "-" 78.4 78.9 82.6 80 77 76.6 79.3 81.8 78.9 77.5 80.5 70 84.7 78.7 78.9 80.3 84.6 87.7 77 79.5 83.8 79.2 78.9 74.6 85 79.7 77.3 76.5 80.9 74.6 83.9 81.6 84.4 79.5 81.8 89.7 81.3 80.5 
+60.7 87.2 65.6 67.3 62.9 50.8 54.5 55.2 52 50.9 77 57.8 66.6 67.3 64.1 "-" 60.6 62.7 53.6 77.5 56.6 69.3 62.5 66.7 51.4 53 53.3 46 84.2 48.9 63 56.9 66.4 81.4 49.3 60.3 57.8 76.8 59.5 61.2 69.8 49.3 52.8 56.8 51.9 48.6 85.7 58.8 68.4 63.3 64 84.7 54.7 61.8 
+73.4 77.3 73.4 73.8 72.1 66.2 70.5 66.5 69.2 69.4 76.9 71.7 76.6 70.8 76.3 "-" 72.1 72.8 72.3 76.3 68.6 72.7 71.8 74.7 69.2 68 70.3 60.6 82.4 69.3 73.8 73 77.8 85.1 67.4 72 75.9 76.5 70.7 67.4 79 67.8 68.5 68.1 70 64.9 82.3 73.5 78.7 71.9 74.7 88.2 71 73 
+]]>
+</data>
+</array>
+</xdf>
+</statdata>
+</statinfo_xdf>
