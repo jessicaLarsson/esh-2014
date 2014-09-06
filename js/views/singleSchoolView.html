@@ -6,7 +6,13 @@
     <br>
     Adress: {{selectedSchool.Adress}}
     <br>
-    Antal elever: {{selectedSchool.numOfStudents}}   
+    Antal elever: {{selectedSchool.numOfStudents}}
+    <br>
+
+    <div ng-repeat="question in questions">
+    	Fråga {{$index + 1}}: {{question}}
+    	<br>
+    </div>
 
 </div>
 

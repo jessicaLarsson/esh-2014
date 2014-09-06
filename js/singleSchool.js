@@ -3,6 +3,7 @@
 var xml03 = "data/kvalitetsarbete_skolkvalitet_grundskolan_gr311.xml";
 var xml06 = "data/kvalitetsarbete_skolkvalitet_grundskolan_gr611.xml";
 var xml09 = "data/kvalitetsarbete_skolkvalitet_grundskolan_gr911.xml";
+
 var questionArray = [];
 var year2009 = 1;
 var schoolName = "Bankekind";
@@ -12,7 +13,7 @@ if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
     xmlhttp = new XMLHttpRequest();
 }
 else { // code for IE6, IE5
-    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 }
 
 xmlhttp.open("GET", xml03, false);
