@@ -85,22 +85,22 @@
 <axis axisId="axisvar3">
 <name><textlang>område</textlang></name>
 <value valueId="var3val1"><textlang>Berzeliusskolan</textlang></value>
-<value valueId="var3val2"><textlang>Björkö friskola</textlang></value>
+<value valueId="var3val2"><textlang>Björkö</textlang></value>
 <value valueId="var3val3"><textlang>Ekholmsskolan</textlang></value>
 <value valueId="var3val4"><textlang>Engelska skolan</textlang></value>
 <value valueId="var3val5"><textlang>Folkungaskolan</textlang></value>
 <value valueId="var3val6"><textlang>Internationella skolan Atlas</textlang></value>
-<value valueId="var3val7"><textlang>Kungsbergsskolan</textlang></value>
+<value valueId="var3val7"><textlang>Kungsbergsskolan 7-9</textlang></value>
 <value valueId="var3val8"><textlang>Kärna skola</textlang></value>
-<value valueId="var3val9"><textlang>Linghemsskola</textlang></value>
-<value valueId="var3val10"><textlang>Ljungsbro skola</textlang></value>
+<value valueId="var3val9"><textlang>Linghemsskolan</textlang></value>
+<value valueId="var3val10"><textlang>Ljungsbro skola 7-9</textlang></value>
 <value valueId="var3val11"><textlang>Nya Munken</textlang></value>
 <value valueId="var3val12"><textlang>Nya Rydsskolan</textlang></value>
 <value valueId="var3val13"><textlang>Skäggetorpsskolan</textlang></value>
 <value valueId="var3val14"><textlang>Tokarpsskolan</textlang></value>
-<value valueId="var3val15"><textlang>Tornhagsskolan</textlang></value>
+<value valueId="var3val15"><textlang>Tornhagsskolan 4-9</textlang></value>
 <value valueId="var3val16"><textlang>Vittra i Lambohov</textlang></value>
-<value valueId="var3val17"><textlang>Ånestadsskolan</textlang></value>
+<value valueId="var3val17"><textlang>Ånestadsskolan 7-9</textlang></value>
 <value valueId="var3val18"><textlang>Samtliga skolor</textlang></value>
 </axis>
 <read>
