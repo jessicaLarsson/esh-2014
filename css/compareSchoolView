@@ -1,0 +1,3 @@
+.school-info, .lighter-data-row, .darker-data-row{
+	padding: 10px 50px 10px 50px;
+}

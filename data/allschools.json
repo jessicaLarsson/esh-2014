@@ -22,7 +22,7 @@
     "Adress":"Gustav Adolfsgatan 25, Linköping",
     "Lat":58.415829,
     "Lon":15.611269,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"11"
   },
   {
@@ -35,7 +35,7 @@
     "Adress":"Björkö Friskola, 590 75 Ljungsbro",
     "Lat":58.509946,
     "Lon":15.527485,
-    "Kommunal":0,
+    "Kommunal":"0",
     "studentsPerTeacher":"12,3"
   },
   {
@@ -48,7 +48,7 @@
     "Adress":"Ellen Keys gata 6, Linköping",
     "Lat":58.4150255,
     "Lon":15.5638155,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"13,2"
   },
   {
@@ -61,7 +61,7 @@
     "Adress":"Ekholmsvägen 117, Linköping",
     "Lat":58.375799,
     "Lon":15.677928,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"16,6" 
   },
   {
@@ -74,7 +74,7 @@
     "Adress":"Ekholmsvägen 117, Linköping",
     "Lat":58.375799,
     "Lon":15.677928,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"14,9"
   },
   {
@@ -87,7 +87,7 @@
     "Adress":"Vinkelvägen 71, Brokind",
     "Lat":58.206174,
     "Lon":15.663676,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"11,9"
   },
   {
@@ -100,7 +100,7 @@
     "Adress":"Myrsättersgatan 26, Ljungsbro",
     "Lat":58.496248,
     "Lon":15.506965,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"15,6"
   },
   {
@@ -113,7 +113,7 @@
     "Adress":"Konstruktörsgatan 104, Linköping",
     "Lat":58.387299,
     "Lon":15.636024,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"10,5"
   },
   {
@@ -126,7 +126,7 @@
     "Adress":"Skattegården 7A, Linköping",
     "Lat":58.428332,
     "Lon":15.581299,
-    "Kommunal":0,
+    "Kommunal":"0",
     "studentsPerTeacher":"14,3"
   },
   {
@@ -139,7 +139,7 @@
     "Adress":"Stormvägen 81, Linköping",
     "Lat":58.432253,
     "Lon":15.692286,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"19,2"
   },
   {
@@ -152,7 +152,7 @@
     "Adress":"Ekholmsvägen 48, Linköping",
     "Lat":58.379733,
     "Lon":15.674467,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"10,8" 
   },
   {
@@ -165,7 +165,7 @@
     "Adress":"Hästhagsvägen 14, Linköping",
     "Lat":58.469621,
     "Lon":15.642851,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"16,4"
   },
   {
@@ -178,7 +178,7 @@
     "Adress":"Östgötagatan 12, Linköping",
     "Lat":58.41185,
     "Lon":15.608918,
-    "Kommunal":0,
+    "Kommunal":"0",
     "studentsPerTeacher":"18,6" 
   },
   {
@@ -191,7 +191,7 @@
     "Adress":"Folkungaskolan, 582 35 Linköping",
     "Lat":58.41178,
     "Lon":15.60327,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"16,1"
   },
   {
@@ -204,7 +204,7 @@
     "Adress":"Fredriksbergsvägen 37, Linköping",
     "Lat":58.382897,
     "Lon":15.673945,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"10,4"
   },
   {
@@ -217,7 +217,7 @@
     "Adress":"Hagbyskolan, 587 23 Linköping",
     "Lat":58.393674,
     "Lon":15.654521,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"17"
   },
   {
@@ -230,7 +230,7 @@
     "Adress":"Himnavägen 145, Linghem",
     "Lat":58.428248,
     "Lon":15.781934,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"16,8" 
   },
   {
@@ -243,7 +243,7 @@
     "Adress":"Bokhagsvägen 5, Linköping",
     "Lat":58.376578,
     "Lon":15.714331,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"14,3"
   },
   {
@@ -256,7 +256,7 @@
     "Adress":"Brigadgatan 18, Linköping",
     "Lat":58.39604,
     "Lon":15.612422,
-    "Kommunal":2,
+    "Kommunal":"2",
     "studentsPerTeacher":"11,8"
   },
   {
@@ -269,7 +269,7 @@
     "Adress":"Drottningtorget 1, Linköping",
     "Lat":58.410918,
     "Lon":15.637558,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"11,7"
   },
   {
@@ -282,7 +282,7 @@
     "Adress":"Drottningtorget 1, Linköping",
     "Lat":58.410918,
     "Lon":15.637558,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"12,8"  
   },
   {
@@ -295,7 +295,7 @@
     "Adress":"Backsippevägen 14C, Linköping",
     "Lat":58.381399,
     "Lon":15.694434,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"19"
   },
   {
@@ -308,7 +308,7 @@
     "Adress":"Kärna skola, 586 62 Linköping",
     "Lat":58.4181316,
     "Lon":15.5158735,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"14,1" 
   },
   {
@@ -321,7 +321,7 @@
     "Adress":"Sporrsmedsgatan 18, Linköping",
     "Lat":58.38474,
     "Lon":15.651368,
-    "Kommunal":0,
+    "Kommunal":"0",
     "studentsPerTeacher":"11,5"  
   },
   {
@@ -334,7 +334,7 @@
     "Adress":"Gällstadsvägen 20, Linghem",
     "Lat":58.433528,
     "Lon":15.78552,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"12,4" 
   },
   {
@@ -347,7 +347,7 @@
     "Adress":"Ljung skola, 590 75 Ljungsbro",
     "Lat":58.506489,
     "Lon":15.505828,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"17,8" 
   },
   {
@@ -360,7 +360,7 @@
     "Adress":"Ljungsbro skola, 590 71 Ljungsbro",
     "Lat":58.508626,
     "Lon":15.501092,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"11,5"
   },
   {
@@ -373,7 +373,7 @@
     "Adress":"Ljungsbro skola, 590 71 Ljungsbro",
     "Lat":58.508626,
     "Lon":15.501092,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"11,4" 
   },
   {
@@ -386,7 +386,7 @@
     "Adress":"Skogslyckegatan 1G, Linköping",
     "Lat":58.397203,
     "Lon":15.662163,
-    "Kommunal":0,
+    "Kommunal":"0",
     "studentsPerTeacher":"12,4" 
   },
   {
@@ -399,7 +399,7 @@
     "Adress":"Björnkärrsgatan 17, Linköping",
     "Lat":58.409996,
     "Lon":15.56518,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"9,6"  
   },
   {
@@ -412,7 +412,7 @@
     "Adress":"Nygårdsskolan, 586 42 Linköping",
     "Lat":58.097778,
     "Lon":15.220952,
-    "Kommunal":2,
+    "Kommunal":"2",
     "studentsPerTeacher":"10,3"  
   },
   {
@@ -425,7 +425,7 @@
     "Adress":"Solvågsvägen 9, Nykil",
     "Lat":58.286398,
     "Lon":15.449638,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"12,5"
   },
   {
@@ -438,7 +438,7 @@
     "Adress":"Birkagatan 2, Vikingstad",
     "Lat":58.40114,
     "Lon":15.416111,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"11,3" 
   },
   {
@@ -451,7 +451,7 @@
     "Adress":"Rosendalsskolan, 586 49 Linköping",
     "Lat":58.097778,
     "Lon":15.220952,
-    "Kommunal":2,
+    "Kommunal":"2",
     "studentsPerTeacher":"11,8"
   },
   {
@@ -464,7 +464,7 @@
     "Adress":"Gamla Kalmarvägen, Linköping",
     "Lat":58.36603,
     "Lon":15.558829,
-    "Kommunal":2,
+    "Kommunal":"2",
     "studentsPerTeacher":"12,9" 
   },
   {
@@ -477,7 +477,7 @@
     "Adress":"Skäggetorpsskolan, 586 42 Linköping",
     "Lat":58.097778,
     "Lon":15.220952,
-    "Kommunal":2,
+    "Kommunal":"2",
     "studentsPerTeacher":"8"  
   },
   {
@@ -490,7 +490,7 @@
     "Adress":"Gamla Kalmarvägen 5, Linköping",
     "Lat":58.370014,
     "Lon":15.557373,
-    "Kommunal":2,
+    "Kommunal":"2",
     "studentsPerTeacher":"16,5" 
   },
   {
@@ -503,7 +503,7 @@
     "Adress":"Rättaregatan 120, Linköping",
     "Lat":58.385677,
     "Lon":15.570341,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"13,4" 
   },
   {
@@ -516,7 +516,7 @@
     "Adress":"Sätra skola, 590 55 Sturefors",
     "Lat":58.330475,
     "Lon":15.7259,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"11"
   },
   {
@@ -529,7 +529,7 @@
     "Adress":"Fanjunkaregatan 3, Linköping",
     "Lat":58.401852,
     "Lon":15.603068,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":""
   },
   {
@@ -542,7 +542,7 @@
     "Adress":"Värdshusvägen 10, Linköping",
     "Lat":58.428703,
     "Lon":15.67977,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"9,9"
   },
   {
@@ -555,7 +555,7 @@
     "Adress":"Nya Tanneforsvägen 78, Linköping",
     "Lat":58.403326,
     "Lon":15.645947,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"12,5"
   },
   {
@@ -568,7 +568,7 @@
     "Adress":"Fårhagsvägen 142, Linköping",
     "Lat":58.424544,
     "Lon":15.507866,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"14,5"
   },
   {
@@ -581,7 +581,7 @@
     "Adress":"Stenbrötsgatan 5, Linköping",
     "Lat":58.412947,
     "Lon":15.592823,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"16,3"
   },
   {
@@ -594,7 +594,7 @@
     "Adress":"Stenbrötsgatan 5, Linköping",
     "Lat":58.412947,
     "Lon":15.592823,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"12,5"
   },
   {
@@ -607,7 +607,7 @@
     "Adress":"Munkhagsgatan 160, Linköping",
     "Lat":58.38899,
     "Lon":15.674742,
-    "Kommunal":0,
+    "Kommunal":"0",
     "studentsPerTeacher":"10,2"
   },
   {
@@ -620,7 +620,7 @@
     "Adress":"Fanjunkaregatan 3, Linköping",
     "Lat":58.401852,
     "Lon":15.603068,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"18"
   },
   {
@@ -633,7 +633,7 @@
     "Adress":"Tunngatan 13, Linköping",
     "Lat":58.379979,
     "Lon":15.648065,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"16,1"
   },
   {
@@ -646,7 +646,7 @@
     "Adress":"Mimergatan 13, Linköping",
     "Lat":58.381557,
     "Lon":15.43628,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"14,6"
   },
   {
@@ -659,7 +659,7 @@
     "Adress":"Näckrosvägen, Sturefors",
     "Lat":58.334339,
     "Lon":15.7224,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"15,2"
   },
   {
@@ -672,7 +672,7 @@
     "Adress":"Tröskaregatan 73-75, Linköping",
     "Lat":58.386251,
     "Lon":15.565265,
-    "Kommunal":0,
+    "Kommunal":"0",
     "studentsPerTeacher":"16,5"
   },
   {
@@ -685,7 +685,7 @@
     "Adress":"Stjärnorpsvägen 1, Vreta Kloster",
     "Lat":58.482771,
     "Lon":15.523464,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"16,2"
   },
   {
@@ -698,7 +698,7 @@
     "Adress":"Maråsvägen 15, Vikingstad",
     "Lat":58.420784,
     "Lon":15.334837,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"9,8"
   },
   {
@@ -711,7 +711,7 @@
     "Adress":"Häggvägen 17, Linköping",
     "Lat":58.393171,
     "Lon":15.650471,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"17,7" 
   },
   {
@@ -724,7 +724,7 @@
     "Adress":"Häggvägen 17, Linköping",
     "Lat":58.393171,
     "Lon":15.650471,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"11,6"
   },
   {
@@ -737,7 +737,7 @@
     "Adress":"Betesgatan 1, Linköping",
     "Lat":58.3800272,
     "Lon":15.5717716,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"14,3"
   },
   {
@@ -750,7 +750,7 @@
     "Adress":"Örtomta skola, 585 62 Linghem",
     "Lat":58.409451,
     "Lon":15.849021,
-    "Kommunal":1,
+    "Kommunal":"1",
     "studentsPerTeacher":"14,3"
   }
 ]

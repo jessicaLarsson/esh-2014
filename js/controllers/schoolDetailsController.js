@@ -63,13 +63,13 @@ schoolApp.controller("SchoolDetailsCtrl", function ($scope, $http, $routeParams)
 	for(i = 0; i < questionArray.length; i++)
 	{
 		if(i == 7 || i ==  8 || i == 11 || i == 0){
-			var qRow = d3.select("#teacher-data");
+			qRow = d3.select("#teacher-data");
 		}else if(i == 3 || i ==  4 || i == 5 || i == 6){
-			var qRow = d3.select("#safety-data");
+			qRow = d3.select("#safety-data");
 		}else if(i == 1 || i == 2 || i ==  9 || i == 10){
-			var qRow = d3.select("#study-data");
+			qRow = d3.select("#study-data");
 		}else{
-			var qRow = d3.select("#food-data");
+			qRow = d3.select("#food-data");
 		}
 		
 		data_id = (i*schools.length*3 + year2009*schools.length + schoolID);
