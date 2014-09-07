@@ -7,13 +7,21 @@
 }
 
 .data-explanation{
-	padding: 0 50px 0 50px;
+	padding: 10px 50px 10px 50px;
 }
 
+.chart {
+	border-right: 1px dotted;
+	border-color: #555555;
+}
 
  .chart rect {
    stroke: white;
    fill: #4cd9c0;
+}
+
+h3{
+	font-weight: normal;
 }
 
 h2.school-name-compare{
@@ -27,6 +35,14 @@ p.school-address-compare{
 a.school-website-compare{
 	font-size: 14px;
 	color: #555555;
+}
+
+p.color-expl-tag{
+	float: left;
+	overflow: hidden; 
+	padding: 5px 20px 5px 20px;
+	margin-right: 20px;
+	border-radius: 5px;
 }
 
 .lighter-data-section {

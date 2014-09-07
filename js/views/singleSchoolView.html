@@ -17,18 +17,32 @@
                 <a href="{{selectedSchool.Url}}" class="school-website"><i class="fa fa-globe"></i> Besök {{selectedSchool.Skola}}s hemsida</a>
             </div>
             <div class="col-md-3">
-                <p class="large-number">{{selectedSchool.From}} - {{selectedSchool.To}}</p>
-                <p class="number-description">Årskurs</p>
+                <div class="nrBox">
+                    <p class="large-number">{{selectedSchool.From}} - {{selectedSchool.To}}</p>
+                    <p class="number-description">Årskurs</p>
+                </div>
             </div>
             <div class="col-md-3">
-                <p class="large-number">{{selectedSchool.numOfStudents}}</p>
-                <p class="number-description">elever</p>
+                <div class="nrBox">
+                    <p class="large-number">{{selectedSchool.numOfStudents}}</p>
+                    <p class="number-description">elever</p>
+                </div>
             </div>
             <div class="col-md-3">
-                <p class="large-number">{{selectedSchool.studentsPerTeacher}}</p>
-                <p class="number-description">elever / lärare</p>
+                <div class="nrBox">
+                    <p class="large-number">{{selectedSchool.studentsPerTeacher}}</p>
+                    <p class="number-description">elever / lärare</p>
+                </div>
             </div>
-            
+        </div>
+        
+        <div class="data-explanation row">
+            <div class="col-lg-12">
+                <h2>Resultat från elevenkäter</h2>
+                <p>Nedan presenteras resultatet från en enkätundersökning som Linköpings kommun utfört. Alla skolor där minst 10 elever och minst 50 % av de tillfrågade eleverna besvarat enkäten finns med i redovisningen.</p>
+                <p>Eleverna har svarat i en fyrgradig skala från ”Stämmer helt och hållet” till ”Stämmer inte alls”. De fyra svarsalternativen viktas 100 - 66 - 33 - 0. Det innebär att värden över 50 är åt det positiva hållet och värden över 80 är mycket bra. <i class="fa fa-circle red"></i> = 0, <i class="fa fa-circle turq"></i> = 100.</p> 
+               <p>Läs mer om detta <a href="http://www.linkoping.se/sv/Skola-barnomsorg/Grundskolor/Kvalitetsuppfoljning/" class="red">här</a>.</p>
+            </div>
         </div>
        	
 

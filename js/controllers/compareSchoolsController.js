@@ -62,12 +62,22 @@ schoolApp.controller("CompareSchoolsCtrl", function ($scope, $http, $routeParams
         }
     } 
    
-   var qSection;
+    var qSection;
     var questionNumber = 0;
     var data_id = 0;
     var qSection; 
     var nrOfRows = 0;
-    console.log(questionArray.length);
+    
+    var colors = ["#526e82", "#4cd9c0", " #ff8989", "#c6bcdb"];
+
+    for(j = 0; j < $scope.selection.length; j++){
+        var colorExpl = d3.select("#color-expl")
+            .append("p")
+            .text($scope.selection[j])
+            .attr("class", "color-expl-tag")
+            .style("background-color",  colors[j])
+            .style("color", "#efefef");
+      }
 
 
     for(i = 0; i < questionArray.length; i++)
@@ -89,7 +99,6 @@ schoolApp.controller("CompareSchoolsCtrl", function ($scope, $http, $routeParams
 
     function addBarChart(qSection, question){
          var data = [];
-
           console.log("lentgh: " + schoolID.length);
           console.log("names: " + $scope.selection.length);
 
@@ -97,11 +106,6 @@ schoolApp.controller("CompareSchoolsCtrl", function ($scope, $http, $routeParams
             data_id = (i*schools.length*3 + year2009*schools.length + schoolID[j]);
             data.push(new_data[data_id]);
           }
-
-
-        var color = d3.scale.ordinal()
-            .domain(["foo", "bar", "baz"])
-            .range(["#4cd9c0", "#ff8989", "#526e82"]);
 
         var chartSection = qSection
             .append("div")
@@ -111,7 +115,6 @@ schoolApp.controller("CompareSchoolsCtrl", function ($scope, $http, $routeParams
             .append("h4")
             .attr("class", "chartQuestion")
             .text(question);
-
 
         var chart = chartSection
             .append("svg:svg")
@@ -142,14 +145,12 @@ schoolApp.controller("CompareSchoolsCtrl", function ($scope, $http, $routeParams
             .attr("width", x)
             .attr("height", y.rangeBand());
 
-        colors = ["red", "blue", "green", "black"];
+        chart.selectAll("rect")
+            .style("fill", function(d, i){
+            console.log("i" + i);
+            return colors[i]});
 
-    chart.selectAll("rect")
-      .style("fill", function(d, i){
-        console.log("i" + i);
-        return colors[i]});
-
-    }
+        }
 
     
 });

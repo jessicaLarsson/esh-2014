@@ -1,9 +1,9 @@
 .school-info, .lighter-data-row, .darker-data-row{
-	padding: 10px 50px 10px 50px;
+	padding: 10px 50px 25px 50px;
 }
 
 .school-info{
-	background: #FFFFFF;
+	background: #ccf5ee;
 }
 
 .lighter-data-row {
@@ -27,20 +27,27 @@ a.school-website{
 	color: #555555;
 }
 
+.nrBox{
+	width: 150px;
+	margin-top: 15px;
+}
+
 p.large-number{
 	color: #8de1d2;
 	font-weight: bold;
 	font-size: 100px;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 
 p.number-description{
 	color: #526e82;
 	font-weight: bold;
 	font-size: 30px;
-	margin: -15px 0 0 0;
+	margin: -15px 0 0 30px;
 	padding: 0;
+	text-align: center;
 }
 
 h4.pieQuestion{
