@@ -23,17 +23,6 @@ schoolApp.controller("CompareSchoolsCtrl", function ($scope, $http, $routeParams
             //Error
         })
 
-    var header = d3.select("#compareHeader");
-    for(i = 0; i < $scope.selection.length; i++)
-    {
-       console.log($scope.selection[i]); 
-       header.append("div")
-       .attr("class", "col-md-"+(12/$scope.selection.length))
-       .append("h2")
-       .text($scope.selection[i]);
-
-    }
-
     var xml03 = "data/kvalitetsarbete_skolkvalitet_grundskolan_gr311.xml";
     var xml06 = "data/kvalitetsarbete_skolkvalitet_grundskolan_gr611.xml";
     var xml09 = "data/kvalitetsarbete_skolkvalitet_grundskolan_gr911.xml";
@@ -94,25 +83,37 @@ schoolApp.controller("CompareSchoolsCtrl", function ($scope, $http, $routeParams
             qSection = d3.select("#food-data");
         }
 
-        console.log("lentgh: " + schoolID.length);
-
-        addBarChart(qSection, questionArray[i], schoolID, $scope.selection);
+        addBarChart(qSection, questionArray[i]);
         
     }
 
-    function addBarChart(qSection, question, schoolIDs, schoolNames){
-         var data = [4, 8, 15, 16, 23, 42];
+    function addBarChart(qSection, question){
+         var data = [];
 
-         
-         data_id = (i*schools.length*3 + year2009*schools.length + schoolID);
+          console.log("lentgh: " + schoolID.length);
+          console.log("names: " + $scope.selection.length);
+
+          for(j = 0; j < $scope.selection.length; j++){
+            data_id = (i*schools.length*3 + year2009*schools.length + schoolID[j]);
+            data.push(new_data[data_id]);
+          }
+
 
         var color = d3.scale.ordinal()
             .domain(["foo", "bar", "baz"])
             .range(["#4cd9c0", "#ff8989", "#526e82"]);
 
-        var chart = qSection
+        var chartSection = qSection
             .append("div")
-            .attr("class", "col-md-3" )
+            .attr("class", "col-md-3" );
+
+        var testText = chartSection
+            .append("h4")
+            .attr("class", "chartQuestion")
+            .text(question);
+
+
+        var chart = chartSection
             .append("svg:svg")
             .attr("class", "chart")
             .attr("width", 220)
@@ -141,7 +142,7 @@ schoolApp.controller("CompareSchoolsCtrl", function ($scope, $http, $routeParams
             .attr("width", x)
             .attr("height", y.rangeBand());
 
-        chart.selectAll("text")
+        /*chart.selectAll("text")
             .data(data)
             .enter().append("svg:text")
             .attr("x", x)
@@ -150,7 +151,7 @@ schoolApp.controller("CompareSchoolsCtrl", function ($scope, $http, $routeParams
             .attr("dy", ".35em") // vertical-align: middle
             .attr("text-anchor", "end") // text-align: right
             .attr("fill", "white")
-            .text(String);
+            .text(String);*/
 
     }
 

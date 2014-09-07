@@ -1,8 +1,40 @@
-#compareHeader, #compare-data {
+#compareHeader, .darker-data-section, .lighter-data-section{
 	padding: 10px 50px 10px 50px;
 }
 
  .chart rect {
    stroke: white;
    fill: #4cd9c0;
+}
+
+h2.school-name-compare{
+	
+}
+
+.lighter-data-section {
+	background: #FFFFFF;
+}
+
+.darker-data-section{
+	background: #ebebeb;
+}
+
+h4.chartQuestion{
+	height: 60px;
+}
+
+p.large-number{
+	color: #8de1d2;
+	font-weight: bold;
+	font-size: 100px;
+	margin: 0;
+	padding: 0;
+}
+
+p.number-description{
+	color: #526e82;
+	font-weight: bold;
+	font-size: 30px;
+	margin: -15px 0 0 0;
+	padding: 0;
 }
