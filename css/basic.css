@@ -42,6 +42,14 @@ ul.navbar-nav li.active a{
 	color: red;
 }
 
+a.menu-item {
+	font-size: 15px !important;
+}
+
+a.menu-item i{
+	font-size: 30px !important;
+}
+
 .footer-section {
 	background: #526e82;
 	text-align: center;
