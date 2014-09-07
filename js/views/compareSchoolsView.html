@@ -1,6 +1,23 @@
 <div>
 	<section>
 		<div class="row" id="compareHeader">
+			<div ng-repeat="school in selectedSchools">
+				<div class="col-md-3">
+					<h2 class="school-name-compare"><a href="#/{{school.Skola}}">{{school.Skola}}</a></h2>
+					<p class="school-address"><i class="fa fa-map-marker"></i> {{school.Adress}}</p>
+		            <a href="{{school.Url}}" class="school-website"><i class="fa fa-globe"></i> Besök {{school.Skola}}s hemsida</a>
+		        
+
+		            <p class="large-number">{{school.From}} - {{school.To}}</p>
+		            <p class="number-description">Årskurs</p>
+
+		            <p class="large-number">{{school.numOfStudents}}</p>
+		            <p class="number-description">elever</p>
+
+		            <p class="large-number">{{school.studentsPerTeacher}}</p>
+		            <p class="number-description">elever / lärare</p>
+		        </div>
+  			</div>
 		</div>
 
 		<div class="darker-data-section">

@@ -114,6 +114,24 @@ function mapFile(){
         draggable:false,
         position: pos
     });
+
+    /*Content displayed in homwmarker tooltip*/
+    var contentString = '<div id="content">'+
+      '<div id="bodyContent">'+
+      '<p>'+name+'</p>'+
+      '</div>'+
+      '</div>';
+
+    /* setting content to tooltip/infowindow */
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+
+    /* Adding tooltip/infowindow to specific school marker, display when clicking the marker */
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map, marker);
+    });
+
     markerArray.push(marker);
     distanceArray.push(calculateDistance(markerArray[markerArray.length-1].getPosition(), myLatlng));
     return distanceArray[distanceArray.length-1];

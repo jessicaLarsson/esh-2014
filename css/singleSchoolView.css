@@ -34,7 +34,6 @@ p.large-number{
 	font-size: 100px;
 	margin: 0;
 	padding: 0;
-	text-align: center;
 }
 
 p.number-description{
@@ -43,7 +42,6 @@ p.number-description{
 	font-size: 30px;
 	margin: -15px 0 0 0;
 	padding: 0;
-	text-align: center;
 }
 
 h4.pieQuestion{
