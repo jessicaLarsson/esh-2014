@@ -1,6 +1,7 @@
-schoolApp.controller("SchoolsCtrl", ['$scope','$http', function($scope, $http) {    
+
+schoolApp.controller("SchoolsCtrl", ['$scope','$http','$location', function($scope, $http, $location) {    
             
-            $http.get('../../data/allschools.json').success (function(data){
+        $http.get('../../data/allschools.json').success (function(data){
                 $scope.schools = data;
                 $scope.schools.dis = "hej";
 
@@ -29,5 +30,25 @@ schoolApp.controller("SchoolsCtrl", ['$scope','$http', function($scope, $http) {
     $scope.returnDistance = function(){
 
     }
+
+    $scope.selection = [];
+    // toggle selection for a given school by name
+  	$scope.toggleSelection = function toggleSelection(schoolName) {
+  		var idx = $scope.selection.indexOf(schoolName);
+     	// is currently selected
+	    if (idx > -1) {
+	    	$scope.selection.splice(idx, 1);
+	    }
+	    // is newly selected
+     	else {
+       		$scope.selection.push(schoolName);
+     	}
+   	};
+
+   	$scope.compare = function compare(selection) {
+   		var path = '/jamfor/';
+   		$location.path(path+selection);
+   	}
     
 }]);
+
