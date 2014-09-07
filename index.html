@@ -17,7 +17,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body ng-controller="SchoolsCtrl">
 
     <!-- NAVBAR -->
     <div class="navbar navbar-default blue-navbar" role="navigation">
@@ -92,6 +92,9 @@
                   <input type="checkbox" id="inlineCheckbox3" value="9"> 9
                 </label>
 
+                  <input type="checkbox" ng-click="includeType('0')"/> friskola</br/>
+        <input type="checkbox" ng-click="includeType('1')"/> 1</br/>
+        <input type="checkbox" ng-click="includeType('2')"/> 2</br/>
 
                 <div class="form-group">
                   <input type="text" ng-model="searchSchool" placeholder="sök efter skola">
