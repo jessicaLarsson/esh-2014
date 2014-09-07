@@ -9,21 +9,21 @@
     </div>
     <div class="checkbox">
       <label>
-         <input type="checkbox" ng-click="includeType('0')"/> friskola  
+         <input type="checkbox" ng-click="includeType('0')"/> Friskola  
       </label>
     </div>
     <div class="checkbox">
       <label>
-         <input type="checkbox" ng-click="includeType('1')"/> kommunal
+         <input type="checkbox" ng-click="includeType('1')"/> Kommunal
       </label>
     </div>
     <div class="checkbox">
       <label>
-        <input type="checkbox" ng-click="includeType('2')"/> enskild kommunal 
+        <input type="checkbox" ng-click="includeType('2')"/> Enskild kommunal 
       </label>
     </div>
   </form>
-
+  <button ng-click="compare(selection)" ng-disabled="selection.length<2" class="btn btn-default btn-md pull-right compare-button-small">Jämför skolor</button>
 </div> <!-- schoolfilter -->
 
 <!--ORDER-SECTION -->

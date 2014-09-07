@@ -1,6 +1,7 @@
 /*This file contains basic css, common for every view. */
 /* For example fonts, footer menu styles. */
 
+
 html { 
     height: 100%;
 }
@@ -25,10 +26,12 @@ li, a, p, h1, h2, h3, h4, h5, h6{
 }
 
 a.logo{
+	font-family: "Brush Script MT", cursive !important;
 	font-weight: bold;
-	font-size: 28px;
+	font-size: 40px;
 	margin-top: 7px;
 	color: #FFFFFF !important;
+	margin-left: -50px !important;
 }
 
 ul.navbar-nav li a{
@@ -48,6 +51,18 @@ a.menu-item {
 
 a.menu-item i{
 	font-size: 30px !important;
+}
+
+h1.sidebar-title{
+	font-size: 40px;
+}
+
+h2.sidebar-subtitle{
+	font-size: 18px;
+}
+
+p.sidebar-text{
+	margin-top: 15px;
 }
 
 .footer-section {

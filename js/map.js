@@ -103,7 +103,6 @@ function mapFile(){
   function updateUserPos() {
     myLatlng = new google.maps.LatLng(homeMarker.getPosition().lat(), homeMarker.getPosition().lng());
     updateDistances();
-    alert(distanceArray[0]);
   }
 
   /* Adds a marker to the map and to the marker array at the given lat lon position */
