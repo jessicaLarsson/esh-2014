@@ -34,52 +34,57 @@
           </div><!-- ./container -->
 
       </section><!-- ./order-section -->
-      
 
 <div ng-repeat="school in schools | filter: searchSchool | filter: typeFilter">
-  <div class = "row schoolListElement">
 
+    <div ng-class-odd="'odd'" ng-class-even="'even'"> <!-- olika css för jämn resp. udda rad -->
+        <div class = "row schoolListElement">
 
-    <div class="col-sm-2"> <!-- skolnamn -->
-    
-        <b><a href="#/{{school.Skola}}">{{school.Skola}}</a></b></br>
-        {{school.Adress}} </br>
+            <div class="col-sm-2"> <!-- skolnamn -->
+            
+                <b><a href="#/{{school.Skola}}">{{school.Skola}}</a></b></br>
+                {{school.Adress}} </br>
+            
+            </div><!-- ./col-sm- skolnamn -->
 
-    
-    </div><!-- ./col-sm- skolnamn -->
+            <div class="col-sm-2"> <!-- årskurs -->
+              
+                {{school.From}} - {{school.To}} 
+          
+            </div><!-- ./col-sm-3 årskurs -->
 
-    <div class="col-sm-2"> <!-- årskurs -->
-      
-        {{school.From}} - {{school.To}} 
-  
-    </div><!-- ./col-sm-3 årskurs -->
+            <div class="col-sm-2">  <!-- numOfStudents -->
+              {{school.numOfStudents}}
 
-    <div class="col-sm-2">  <!-- numOfStudents -->
-      {{school.numOfStudents}}
+            </div><!-- ./col-sm-3  numOfStudents-->
 
-    </div><!-- ./col-sm-3  numOfStudents-->
+            <div class="col-sm-2" data-ng-init="getDistance(school.Lat, school.Lon, school.Skola)"> <!-- avstånd-->
 
-    <div class="col-sm-2" data-ng-init="getDistance(school.Lat, school.Lon, school.Skola)"> <!-- avstånd-->
-  
-      {{distances[$index]}}
-  
-    </div><!-- ./col-sm-3 avstånd -->
+                <!--<div ng-if="distances[$index] < 1000">{{distances[$index] | number:0}} m</div>-->
 
-    <div class="col-sm-2" data-ng-init="getTravelTime(school.Lat)">  <!-- restid -->
-        {{travelTimeM}}
+                <div ng-if="distances[$index] > 1000">{{distances[$index]/1000 | number:0}} km</div>  
+              
+          
+            </div><!-- ./col-sm-3 avstånd -->
 
-    </div><!-- ./col-sm-3 -->
+            <div class="col-sm-2" data-ng-init="getTravelTime(school.Lat)">  <!-- restid -->
+                {{travelTimeM}}
 
-    
+            </div><!-- ./col-sm-3 -->
 
-    <div class="col-sm-2">  <!-- jämföra -->
-        <input id="{{school.Skola}}" type="checkbox" value="{{school.Skola}}" ng-checked="selection.indexOf(school.Skola) > -1" ng-click="toggleSelection(school.Skola)" />
+            
 
-    </div><!-- ./col-sm-3 -->
+            <div class="col-sm-2">  <!-- jämföra -->
+                <input id="{{school.Skola}}" type="checkbox" value="{{school.Skola}}" ng-checked="selection.indexOf(school.Skola) > -1" ng-click="toggleSelection(school.Skola)" />
 
-    
-</div> <!-- row -->
+            </div><!-- ./col-sm-3 -->
+
+        
+        </div> <!-- row -->
+    </div> <!-- jämn-udda rad -->
 </div> <!-- ng-repeat -->
+
+<button ng-click="compare(selection)">Jämför skolor</button>
 
 
 

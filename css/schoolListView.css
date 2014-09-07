@@ -1,6 +1,17 @@
 .schoolListElement {
 	text-align: left;
-	padding: 15px 0 15px 0;
+	padding: 15px 50px 15px 50px;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.odd {
+  background-color: white;
+}
+.even {
+  background-color: #e0dfdb;
 }
 
 .schoolfilter{
