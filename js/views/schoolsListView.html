@@ -1,9 +1,28 @@
-<div class="schoolfilter"> 
-        <input type="text" ng-model="searchSchool" placeholder="sök efter skola">  <b>Skolform: </b>    <input type="checkbox" ng-click="includeType('0')"/> friskola  
-        <input type="checkbox" ng-click="includeType('1')"/> kommunal
-        <input type="checkbox" ng-click="includeType('2')"/> enskild kommunal 
-        <button ng-click="compare(selection)">Jämför skolor</button></br/> 
 
+
+<div class="schoolfilter"> 
+
+  <form class="form-inline" role="form">
+    <div class="form-group">
+      <label class="sr-only" for="fritext">Fritext</label>
+      <input type="text" ng-model="searchSchool" id="fritext" placeholder="Filtrera på skolnamn...">
+    </div>
+    <div class="checkbox">
+      <label>
+         <input type="checkbox" ng-click="includeType('0')"/> friskola  
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+         <input type="checkbox" ng-click="includeType('1')"/> kommunal
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" ng-click="includeType('2')"/> enskild kommunal 
+      </label>
+    </div>
+  </form>
 
 </div> <!-- schoolfilter -->
 
@@ -27,47 +46,34 @@
               </div><!-- ./col-sm-3 -->
               <div class="col-sm-2">
                 Jämför
-              </div><!-- ./col-sm-3 -->
-              
+              </div><!-- ./col-sm-3 -->         
           </div><!-- ./row-->
-
       </section><!-- ./order-section -->
 
 <div ng-repeat="school in schools | filter: searchSchool | filter: typeFilter">
 
     <div ng-class-odd="'odd'" ng-class-even="'even'"> <!-- olika css för jämn resp. udda rad -->
         <div class = "row schoolListElement">
-
-            <div class="col-sm-2"> <!-- skolnamn -->
-            
-                <b><a href="#/{{school.Skola}}">{{school.Skola}}</a></b></br>
-                {{school.Adress}} </br>
-            
+            <div class="col-sm-2"> <!-- skolnamn -->      
+                <a href="#/{{school.Skola}}" class="list-school-name">{{school.Skola}} <i class="fa fa-arrow-circle-right"></i></a>
+                <p>{{school.Adress}}</p>        
             </div><!-- ./col-sm- skolnamn -->
 
-            <div class="col-sm-2"> <!-- årskurs -->
-              
-                {{school.From}} - {{school.To}} 
-          
+            <div class="col-sm-2"> <!-- årskurs -->           
+                <p>{{school.From}} - {{school.To}}</p>        
             </div><!-- ./col-sm-3 årskurs -->
 
             <div class="col-sm-2">  <!-- numOfStudents -->
-              {{school.numOfStudents}}
-
+              <p>{{school.numOfStudents}}</p>
             </div><!-- ./col-sm-3  numOfStudents-->
 
             <div class="col-sm-2" data-ng-init="getDistance(school.Lat, school.Lon, school.Skola)"> <!-- avstånd-->
-
                 <!--<div ng-if="distances[$index] < 1000">{{distances[$index] | number:0}} m</div>-->
-
-                <div ng-if="distances[$index] > 1000">{{distances[$index]/1000 | number:0}} km</div>  
-              
-          
+                <div ng-if="distances[$index] > 1000"><p>{{distances[$index]/1000 | number:0}} km</p></div>  
             </div><!-- ./col-sm-3 avstånd -->
 
             <div class="col-sm-2" data-ng-init="getTravelTime(school.Lat)">  <!-- restid -->
-                {{travelTimeM}}
-
+                <p>{{travelTimeM}}</p>
             </div><!-- ./col-sm-3 -->
 
             
@@ -82,7 +88,9 @@
     </div> <!-- jämn-udda rad -->
 </div> <!-- ng-repeat -->
 
-<button ng-click="compare(selection)">Jämför skolor</button>
+<div class="button-section">
+  <button ng-click="compare(selection)" ng-disabled="selection.length<2" class="btn btn-default btn-lg pull-right compare-button">Jämför skolor</button>
+</div>
 
 
 

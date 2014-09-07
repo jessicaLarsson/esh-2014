@@ -1,3 +1,28 @@
+.schoolfilter{
+	padding: 10px 50px 10px 50px !important;
+	background: #EEEEEE !important;
+	border-top: 4px solid;
+	border-color: #526e82;
+}
+
+#fritext{
+	padding: 7px 15px 7px 15px !important;
+	border: none;
+	border: 2px solid; 
+	border-color: #ffffff;
+}
+
+#fritext:focus{
+	outline: none; 
+	border-color: #ff8989;
+}
+
+.checkbox{
+	margin-left: 30px;
+	color: #555555;
+	font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif !important;
+}
+
 .schoolListElement {
 	text-align: left;
 	padding: 15px 50px 15px 50px;
@@ -11,7 +36,7 @@
   background-color: white;
 }
 .even {
-  background-color: #e0dfdb;
+  background-color: #ebebeb;
 }
 
 .schoolfilter{
@@ -19,9 +44,37 @@
 	padding: 15px 0 15px 0;
 }
 
-.order-section {
-	background-color: #ff8989;
-	color: #ffffff;
-	font-size: 18px;
-	padding: 15px 50px 15px 50px;
+a.list-school-name{
+	font-size: 16px;
+}
+
+a.list-school-name:hover{
+	font-size: 16px;
+	color: #ff8989;
+	text-decoration: none;
+}
+
+a.list-school-name i.fa{
+	color: #ff8989;
+}
+
+.button-section{
+	padding: 20px 50px 20px 50px;
+	height: 85px;
+	background: #ccf5ee;
+}
+
+button.compare-button{
+	text-transform: uppercase;
+	font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif !important;
+	font-weight: lighter;
+	background: #526e82;
+	color: #FFFFFF;
+	border-color: #3b5060;
+}
+
+button.compare-button:hover{
+	background: #3b5060;
+	color: #EEEEEE;
+	border-color: #3b5060;
 }

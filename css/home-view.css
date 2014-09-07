@@ -25,18 +25,8 @@ form.filter-form .form-group .my-text-input{
 	color: #ffffff;
 	font-size: 18px;
 	padding: 15px 50px 15px 50px;
-}
-
-.order-section a{
-	color: #ffffff;
+	font-weight: lighter;
 	text-transform: uppercase;
-	padding: 5px 15px 5px 15px;
-	background: #ff8989;
-}
-
-.order-section a:hover{
-	text-decoration: none;
-	background: #ff8989;
 }
 
 .data-section {
