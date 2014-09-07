@@ -8,6 +8,7 @@
     <link href="css/basic.css" rel="stylesheet">
     <link href="css/home-view.css" rel="stylesheet">
     <link href="css/schoolListView.css" rel="stylesheet">
+    <link href="css/singleSchoolView.css" rel="stylesheet">
     
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -103,54 +104,40 @@
         </div><!-- ./row-->
       </section><!-- ./map-section -->
 
-
-      <!--ORDER-SECTION -->
-      <section class="order-section">
-          <div class="container">
-              <div class="row ">
-                  <div class="col-sm-3">
-                    <a href="#">Namn <i class="fa fa-sort"></i></a>
-                  </div><!-- ./col-sm-3 -->
-                  <div class="col-sm-3">
-                    <a href="#">Årskurs<i class="fa fa-sort"></i></a>
-                  </div><!-- ./col-sm-3 -->
-                  <div class="col-sm-3">
-                    <a href="#">Avstånd <i class="fa fa-sort"></i></a>
-                  </div><!-- ./col-sm-3 -->
-                  <div class="col-sm-3">
-                    <a href="#">Restid <i class="fa fa-sort"></i></a>
-                  </div><!-- ./col-sm-3 -->
-                  
-              </div><!-- ./row-->
-          </div><!-- ./container -->
-      </section><!-- ./order-section -->
+    <!--ORDER-SECTION -->
+    <section class="order-section">
+        <div class="row">
+            <div class="col-sm-3">
+              <a href="#">Namn <i class="fa fa-sort"></i></a>
+            </div><!-- ./col-sm-3 -->
+            <div class="col-sm-3">
+              <a href="#">Årskurs <i class="fa fa-sort"></i></a>
+            </div><!-- ./col-sm-3 -->
+            <div class="col-sm-3">
+              <a href="#">Avstånd <i class="fa fa-sort"></i></a>
+            </div><!-- ./col-sm-3 -->
+            <div class="col-sm-3">
+              <a href="#">Restid <i class="fa fa-sort"></i></a>
+            </div><!-- ./col-sm-3 -->
+            
+        </div><!-- ./row-->
+    </section><!-- ./order-section -->
 
     </div><!-- ./hide-and-show-section -->
 
-    <!--<script language="javascript"> 
-      var ele = document.getElementById("mapAndOrderDiv");
-      ele.style.display = "block";
-    </script>-->
-
     <!-- DATA-SECTION -->
-    <section class="data-section">
-      <div class="container">
-        <div ng-view="schoolListView"></div>     
-      </div><!-- ./container -->
-    </section><!-- ./data-section -->
+    <div ng-view="schoolListView"></div>     
 
     <!-- FOOTER-SECTION -->
     <section class="footer-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>This is a footer with contact info</h1>
-                </div><!-- ./col-lg-12 -->
-            </div><!-- ./row -->
-        </div><!-- ./container -->
+        <div class="row">
+            <div class="col-lg-12">
+               
+            </div><!-- ./col-lg-12 -->
+        </div><!-- ./row -->
     </section><!-- ./footer-section -->
 
-
+    <script src="http://d3js.org/d3.v3.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyfGb7S9OQLg-vjvJg6e9g-z7gNVXgeGQ"></script>
     <script type="text/javascript" src="js/map.js"></script>   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -161,6 +148,7 @@
     
     <script src="js/controllers/schoolsController.js"></script>
     <script src="js/controllers/schoolDetailsController.js"></script>
+    <script src="js/controllers/compareSchoolsController.js"></script>
 
   </body>
 </html>

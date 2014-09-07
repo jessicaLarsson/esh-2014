@@ -19,7 +19,6 @@ schoolApp.controller("SchoolsCtrl", function ($scope, schoolsService, $location)
    	};
 
    	$scope.compare = function compare(selection) {
-   		console.log(selection);
    		var path = '/jamfor/';
    		$location.path(path+selection);
    	}

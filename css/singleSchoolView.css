@@ -1,0 +1,52 @@
+.school-info, .lighter-data-row, .darker-data-row{
+	padding: 10px 50px 10px 50px;
+}
+
+.school-info{
+	background: #FFFFFF;
+}
+
+.lighter-data-row {
+	background: #FFFFFF;
+}
+
+.darker-data-row{
+	background: #ebebeb;
+}
+
+h2.school-name{
+	font-size: 50px;
+}
+
+p.school-address{
+	font-size: 20px;
+}
+
+a.school-website{
+	font-size: 20px;
+	color: #555555;
+	
+}
+
+p.large-number{
+	color: #8de1d2;
+	font-weight: bold;
+	font-size: 100px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+p.number-description{
+	color: #526e82;
+	font-weight: bold;
+	font-size: 30px;
+	margin: -15px 0 0 0;
+	padding: 0;
+	text-align: center;
+}
+
+h4.pieQuestion{
+	height: 50px;
+}
+

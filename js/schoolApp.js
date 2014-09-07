@@ -14,7 +14,7 @@ schoolApp.config(function($routeProvider){
         	templateUrl: "js/views/singleSchoolView.html"
         })
         .when("/jamfor/:selection",{
-            controller:"SchoolDetailsCtrl",
+            controller:"CompareSchoolsCtrl",
             templateUrl: "js/views/compareSchoolsView.html"
         });
  
