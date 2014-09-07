@@ -1,14 +1,40 @@
-        <input type="checkbox" ng-click="includeType('0')"/> 0</br/>
-        <input type="checkbox" ng-click="includeType('1')"/> 1</br/>
-        <input type="checkbox" ng-click="includeType('2')"/> 2</br/>
-        
-  
-
-        Filter dump: {{schoolTypes}}
+<div class="schoolfilter"> 
+        <input type="text" ng-model="searchSchool" placeholder="sök efter skola">  <b>Skolform: </b>    <input type="checkbox" ng-click="includeType('0')"/> friskola  
+        <input type="checkbox" ng-click="includeType('1')"/> kommunal
+        <input type="checkbox" ng-click="includeType('2')"/> enskild kommunal 
+        <button ng-click="compare(selection)">Jämför skolor</button></br/> 
 
 
+</div> <!-- schoolfilter -->
 
-<button ng-click="compare(selection)">Jämför skolor</button>
+<!--ORDER-SECTION -->
+      <section class="order-section">
+          <div class="container">
+              <div class="row ">
+                  <div class="col-sm-2">
+                    <a href="#">Namn</a>
+                  </div><!-- ./col-sm-3 -->
+                  <div class="col-sm-2">
+                    <a href="#">Årskurs</a>
+                  </div><!-- ./col-sm-3 -->
+                  <div class="col-sm-2">
+                    <a href="#">Antal elever</a>
+                  </div><!-- ./col-sm-3 -->
+                  <div class="col-sm-2">
+                    <a href="#">Avstånd</a>
+                  </div><!-- ./col-sm-3 -->
+                  <div class="col-sm-2">
+                    <a href="#">Restid</a>
+                  </div><!-- ./col-sm-3 -->
+                  <div class="col-sm-2">
+                    <a href="#">Jämföra</a>
+                  </div><!-- ./col-sm-3 -->
+                  
+              </div><!-- ./row-->
+          </div><!-- ./container -->
+
+      </section><!-- ./order-section -->
+      
 
 <div ng-repeat="school in schools | filter: searchSchool | filter: typeFilter">
   <div class = "row schoolListElement">
@@ -18,7 +44,6 @@
     
         <b><a href="#/{{school.Skola}}">{{school.Skola}}</a></b></br>
         {{school.Adress}} </br>
-        "     " {{school.Kommunal}}
 
     
     </div><!-- ./col-sm- skolnamn -->
