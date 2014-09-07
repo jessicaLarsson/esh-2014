@@ -1,0 +1,8 @@
+#compareHeader, #compare-data {
+	padding: 10px 50px 10px 50px;
+}
+
+ .chart rect {
+   stroke: white;
+   fill: #4cd9c0;
+}
