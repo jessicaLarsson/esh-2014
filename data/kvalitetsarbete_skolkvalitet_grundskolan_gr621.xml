@@ -73,23 +73,23 @@
 <axis axisId="axisvar3">
 <name><textlang>område</textlang></name>
 <value valueId="var3val1"><textlang>Björkö</textlang></value>
-<value valueId="var3val2"><textlang>Blästadsskolan</textlang></value>
+<value valueId="var3val2"><textlang>Blästadsskolan 4-6</textlang></value>
 <value valueId="var3val3"><textlang>Brunnbyskolan</textlang></value>
 <value valueId="var3val4"><textlang>Bäckskolan</textlang></value>
 <value valueId="var3val5"><textlang>Ekängsskolan</textlang></value>
-<value valueId="var3val6"><textlang>Engelska Skolan</textlang></value>
+<value valueId="var3val6"><textlang>Engelska skolan</textlang></value>
 <value valueId="var3val7"><textlang>Folkungaskolan</textlang></value>
-<value valueId="var3val8"><textlang>Fredrikgsbergsskolan</textlang></value>
+<value valueId="var3val8"><textlang>Fredriksbergsskolan</textlang></value>
 <value valueId="var3val9"><textlang>Hagbyskolan</textlang></value>
 <value valueId="var3val10"><textlang>Hjulsbroskolan</textlang></value>
-<value valueId="var3val11"><textlang>IS Atlas</textlang></value>
-<value valueId="var3val12"><textlang>Kungsbergsskolan</textlang></value>
+<value valueId="var3val11"><textlang>Internationella skolan Atlas</textlang></value>
+<value valueId="var3val12"><textlang>Kungsbergsskolan F-6</textlang></value>
 <value valueId="var3val13"><textlang>Kvinnebyskolan</textlang></value>
 <value valueId="var3val14"><textlang>Kärna skola</textlang></value>
 <value valueId="var3val15"><textlang>Lillgårdskolan</textlang></value>
 <value valueId="var3val16"><textlang>Linghemsskolan</textlang></value>
 <value valueId="var3val17"><textlang>Ljungs skola</textlang></value>
-<value valueId="var3val18"><textlang>Ljungsbro skola</textlang></value>
+<value valueId="var3val18"><textlang>Ljungsbro skola F-6</textlang></value>
 <value valueId="var3val19"><textlang>Nya Rydsskolan</textlang></value>
 <value valueId="var3val20"><textlang>Nykils skola</textlang></value>
 <value valueId="var3val21"><textlang>Rosendalsskolan</textlang></value>
@@ -102,13 +102,13 @@
 <value valueId="var3val28"><textlang>Tallboda skola</textlang></value>
 <value valueId="var3val29"><textlang>Tanneforsskkolan</textlang></value>
 <value valueId="var3val30"><textlang>Tokarpsskolan</textlang></value>
-<value valueId="var3val31"><textlang>Tornhagsskolan</textlang></value>
+<value valueId="var3val31"><textlang>Tornhagsskolan 4-9</textlang></value>
 <value valueId="var3val32"><textlang>Vidingsjöskolan</textlang></value>
 <value valueId="var3val33"><textlang>Vikingstads skola</textlang></value>
 <value valueId="var3val34"><textlang>Vist skola</textlang></value>
 <value valueId="var3val35"><textlang>Vittra i Lambohov</textlang></value>
 <value valueId="var3val36"><textlang>Vreta kloster</textlang></value>
-<value valueId="var3val37"><textlang>Ånestadsskolan</textlang></value>
+<value valueId="var3val37"><textlang>Ånestadsskolan F-6</textlang></value>
 <value valueId="var3val38"><textlang>Änggårdsskolan</textlang></value>
 <value valueId="var3val39"><textlang>Samtliga skolor</textlang></value>
 </axis>

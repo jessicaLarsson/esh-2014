@@ -1,8 +1,35 @@
-schoolApp.controller("SchoolsCtrl", function ($scope, schoolsService, $location){
-    //Executes when the controller is created
-    $scope.schools = schoolsService.schools;
 
-    schoolsService.getSchools();
+schoolApp.controller("SchoolsCtrl", ['$scope','$http','$location', function($scope, $http, $location) {    
+            
+        $http.get('data/allschools.json').success (function(data){
+                $scope.schools = data;
+                $scope.schools.dis = "hej";
+
+        	});
+
+
+    //reRobot variabler
+    $scope.travelTimeH = 0;
+    $scope.travelTimeM = "hej";
+
+    //map variabler
+    $scope.distances = [];
+    //$scope.distance = "d";
+
+    $scope.getTravelTime = function(index){
+    	//console.log("i getTravelTime" + index);
+    	$scope.travelTimeM = "muahaha";
+    	
+    }
+
+    $scope.getDistance = function(lat, lon, name){
+    	$scope.distances.push(mapFunction.addSchoolMarker(lat, lon, name));
+ 
+    }
+
+    $scope.returnDistance = function(){
+
+    }
 
     $scope.selection = [];
     // toggle selection for a given school by name
@@ -22,4 +49,6 @@ schoolApp.controller("SchoolsCtrl", function ($scope, schoolsService, $location)
    		var path = '/jamfor/';
    		$location.path(path+selection);
    	}
-});
+    
+}]);
+

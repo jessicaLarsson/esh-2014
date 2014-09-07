@@ -1,40 +1,48 @@
-<button ng-click="compare(selection)">Jämför skolor</button>
 
-<div ng-repeat="school in selection">
-	{{school.Skola}}
- </div>
+<button ng-click="compare(selection)">Jämför skolor</button>
 
 <div ng-repeat="school in schools | filter: searchSchool">
   <div class = "row schoolListElement">
-    <div class="col-sm-3"> <!-- skolnamn -->
+
+
+    <div class="col-sm-2"> <!-- skolnamn -->
     
         <b><a href="#/{{school.Skola}}">{{school.Skola}}</a></b></br>
         {{school.Adress}}
 
     
-    </div><!-- ./col-sm-3 -->
+    </div><!-- ./col-sm- skolnamn -->
 
-    <div class="col-sm-3"> <!-- årskurs -->
+    <div class="col-sm-2"> <!-- årskurs -->
       
         {{school.From}} - {{school.To}} 
   
-    </div><!-- ./col-sm-3 -->
+    </div><!-- ./col-sm-3 årskurs -->
 
-    <div class="col-sm-3"> <!-- avstånd-->
+    <div class="col-sm-2">  <!-- numOfStudents -->
+      {{school.numOfStudents}}
 
-    	<input id="{{school.Skola}}" type="checkbox" value="{{school.Skola}}" ng-checked="selection.indexOf(school.Skola) > -1" ng-click="toggleSelection(school.Skola)" />
+    </div><!-- ./col-sm-3  numOfStudents-->
 
-        <script>
-            var dist = mapFunction.getDistance(58.41075642311165, 15.621438785552755);
-        </script>
-        
-    </div><!-- ./col-sm-3 -->
+    <div class="col-sm-2" data-ng-init="getDistance(school.Lat, school.Lon, school.Skola)"> <!-- avstånd-->
+  
+      {{distances[$index]}}
+  
+    </div><!-- ./col-sm-3 avstånd -->
 
-    <div class="col-sm-3">
+    <div class="col-sm-2" data-ng-init="getTravelTime(school.Lat)">  <!-- restid -->
+        {{travelTimeM}}
+
     </div><!-- ./col-sm-3 -->
 
     
 
+    <div class="col-sm-2">  <!-- jämföra -->
+        <input id="{{school.Skola}}" type="checkbox" value="{{school.Skola}}" ng-checked="selection.indexOf(school.Skola) > -1" ng-click="toggleSelection(school.Skola)" />
+
+    </div><!-- ./col-sm-3 -->
+
+    
 </div> <!-- row -->
 </div> <!-- ng-repeat -->
 
