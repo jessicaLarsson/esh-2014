@@ -1,3 +1,9 @@
+<button ng-click="compare(selection)">Jämför skolor</button>
+
+<div ng-repeat="school in selection">
+	{{school.Skola}}
+ </div>
+
 <div ng-repeat="school in schools | filter: searchSchool">
   <div class = "row schoolListElement">
     <div class="col-sm-3"> <!-- skolnamn -->
@@ -15,6 +21,9 @@
     </div><!-- ./col-sm-3 -->
 
     <div class="col-sm-3"> <!-- avstånd-->
+
+    	<input id="{{school.Skola}}" type="checkbox" value="{{school.Skola}}" ng-checked="selection.indexOf(school.Skola) > -1" ng-click="toggleSelection(school.Skola)" />
+
         <script>
             var dist = mapFunction.getDistance(58.41075642311165, 15.621438785552755);
         </script>

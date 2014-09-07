@@ -1,12 +1,11 @@
 schoolApp.controller("SchoolDetailsCtrl", function ($scope, $http, $routeParams){
 
-
 	var lowest = 0;
 	$scope.highest;
 	var altNames = "";
 
-	$http.get("../../data/allschools.json") // funkar på felicia och jessicas dator
-	//$http.get("data/allschools.json") // funkar på emmas dator
+	//$http.get("../../data/allschools.json") // funkar på felicia och jessicas dator
+	$http.get("data/allschools.json") // funkar på emmas dator
         .then(function(results){
             console.log("Success!");
             //Success
@@ -17,11 +16,10 @@ schoolApp.controller("SchoolDetailsCtrl", function ($scope, $http, $routeParams)
             		$scope.selectedSchool = data[a];
             	}
             }
+
         }, function(results){
             //Error
         })
-	
-	console.log($routeParams.schoolName);
 
 	var xml03 = "data/kvalitetsarbete_skolkvalitet_grundskolan_gr311.xml";
 	var xml06 = "data/kvalitetsarbete_skolkvalitet_grundskolan_gr611.xml";

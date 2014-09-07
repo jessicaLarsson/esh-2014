@@ -12,6 +12,10 @@ schoolApp.config(function($routeProvider){
         .when("/:schoolName",{
         	controller:"SchoolDetailsCtrl",
         	templateUrl: "js/views/singleSchoolView.html"
+        })
+        .when("/jamfor/:selection",{
+            controller:"CompareSchoolsCtrl",
+            templateUrl: "js/views/compareSchoolsView.html"
         });
  
     $routeProvider.otherwise({"redirectTo": "/"});  //.otherwise("/"); //does not work
