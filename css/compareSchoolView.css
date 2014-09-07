@@ -2,13 +2,31 @@
 	padding: 10px 50px 10px 50px;
 }
 
+#compareHeader{
+	background: #ccf5ee;
+}
+
+.data-explanation{
+	padding: 0 50px 0 50px;
+}
+
+
  .chart rect {
    stroke: white;
    fill: #4cd9c0;
 }
 
 h2.school-name-compare{
-	
+	font-size: 30px !important;
+}
+
+p.school-address-compare{
+	font-size: 14px;
+}
+
+a.school-website-compare{
+	font-size: 14px;
+	color: #555555;
 }
 
 .lighter-data-section {
@@ -21,12 +39,13 @@ h2.school-name-compare{
 
 h4.chartQuestion{
 	height: 60px;
+	font-size: 16px;
 }
 
 p.large-number{
-	color: #8de1d2;
+	color: #41c0a9;
 	font-weight: bold;
-	font-size: 100px;
+	font-size: 60px;
 	margin: 0;
 	padding: 0;
 }
@@ -34,7 +53,7 @@ p.large-number{
 p.number-description{
 	color: #526e82;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 20px;
 	margin: -15px 0 0 0;
 	padding: 0;
 }
