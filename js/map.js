@@ -112,7 +112,8 @@ function mapFile(){
     var marker = new google.maps.Marker({
         map: map,
         draggable:false,
-        position: pos
+        position: pos,
+        icon: 'img/map-marker.png'
     });
 
     /*Content displayed in homwmarker tooltip*/

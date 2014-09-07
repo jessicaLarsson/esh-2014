@@ -78,3 +78,9 @@ button.compare-button:hover{
 	color: #EEEEEE;
 	border-color: #3b5060;
 }
+
+button.compare-button[disabled=disabled], button.compare-button:disabled {
+   background: #b2b2b2;
+   color: #dddddd;
+}
+
