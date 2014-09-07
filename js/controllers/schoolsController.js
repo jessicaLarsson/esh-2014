@@ -1,7 +1,7 @@
 
 schoolApp.controller("SchoolsCtrl", ['$scope','$http','$location', function($scope, $http, $location) {    
             
-        $http.get('../../data/allschools.json').success (function(data){
+        $http.get('data/allschools.json').success (function(data){
                 $scope.schools = data;
                 $scope.schools.dis = "hej";
 
