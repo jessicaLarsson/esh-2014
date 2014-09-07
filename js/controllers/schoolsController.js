@@ -15,11 +15,11 @@ schoolApp.controller("SchoolsCtrl", ['$scope','$http','$location', function($sco
     //map variabler
     $scope.distances = [];
 
-
+    $scope.showMap = "testgdsfds";
 
     $scope.getTravelTime = function(index){
     	//console.log("i getTravelTime" + index);
-    	$scope.travelTimeM = "muahaha";
+    	$scope.travelTimeM = "5 min med cykel";
     	
     }
 
