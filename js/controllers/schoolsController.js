@@ -8,13 +8,14 @@ schoolApp.controller("SchoolsCtrl", ['$scope','$http','$location', function($sco
         	});
 
 
-    //reRobot variabler
+    //resRobot variabler
     $scope.travelTimeH = 0;
     $scope.travelTimeM = "hej";
 
     //map variabler
     $scope.distances = [];
-    //$scope.distance = "d";
+
+
 
     $scope.getTravelTime = function(index){
     	//console.log("i getTravelTime" + index);
@@ -27,10 +28,7 @@ schoolApp.controller("SchoolsCtrl", ['$scope','$http','$location', function($sco
  
     }
 
-    $scope.returnDistance = function(){
-
-    }
-
+    //compare methods
     $scope.selection = [];
     // toggle selection for a given school by name
   	$scope.toggleSelection = function toggleSelection(schoolName) {
@@ -49,6 +47,27 @@ schoolApp.controller("SchoolsCtrl", ['$scope','$http','$location', function($sco
    		var path = '/jamfor/';
    		$location.path(path+selection);
    	}
+
+    $scope.schoolTypes = [];
+
+    $scope.typeFilter = function(school){
+      if ($scope.schoolTypes.length > 0) {
+            if ($.inArray(school.Kommunal, $scope.schoolTypes) < 0)
+                return;
+        }
+        
+        return school;
+      }
+
+    $scope.includeType = function(type) {
+      var i = $.inArray(type, $scope.schoolTypes);
+        if (i > -1) {
+            $scope.schoolTypes.splice(i, 1);
+        } else {
+            $scope.schoolTypes.push(type);
+        }
+    }
+
     
 }]);
 
